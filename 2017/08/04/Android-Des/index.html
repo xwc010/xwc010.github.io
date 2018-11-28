@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="QLelsoavBq">
+    <meta name="baidu_union_verify" content="a196fa7bc04fb2b9c923972cfdc4db64">
+    
+    <!-- google广告网站验证 -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3265299695901949",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WGTG33V');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    
+    
+    <title>Android DES加解密的两种实现方式 | 亘古永蓝</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="解决Java DES与Android DES不兼容问题 【方式一】用于加密的秘钥长度不限">
+<meta name="keywords" content="Android,Java,DES,数据加解密">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android DES加解密的两种实现方式">
+<meta property="og:url" content="http://blog.zimob.cc/2017/08/04/Android-Des/index.html">
+<meta property="og:site_name" content="亘古永蓝">
+<meta property="og:description" content="解决Java DES与Android DES不兼容问题 【方式一】用于加密的秘钥长度不限">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-16T04:16:09.079Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android DES加解密的两种实现方式">
+<meta name="twitter:description" content="解决Java DES与Android DES不兼容问题 【方式一】用于加密的秘钥长度不限">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="亘古永蓝" type="application/atom+xml">
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-104645052-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+        <meta name="google-site-verification" content="GTM-WGTG33V">
+    
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?021f591f9348c5abc69731eb64f254d5";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    
+
+
+</head>
+</html>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGTG33V"
+            height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">亘古永蓝</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/sites">酷站导航</a>
+                
+                    <a class="main-nav-link" href="/archives">存档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/contributions">投稿</a>
+                
+                    <a class="main-nav-link" href="/learn">学习方法</a>
+                
+                    <a class="main-nav-link" href="/welfares">人人公益</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索">
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:blog.zimob.cc ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+<!-- <script type="text/javascript">
+	(function(){
+		document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+		var bdcs = document.createElement('script');
+		bdcs.type = 'text/javascript';
+		bdcs.async = true;
+		bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=12692636141773082327' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(bdcs, s);
+	})();
+</script> -->
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/sites">酷站导航</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">存档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/contributions">投稿</a></td>
+                
+                    <td><a class="main-nav-link" href="/learn">学习方法</a></td>
+                
+                    <td><a class="main-nav-link" href="/welfares">人人公益</a></td>
+                
+                <td>
+                    
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索">
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:blog.zimob.cc ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+<!-- <script type="text/javascript">
+	(function(){
+		document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+		var bdcs = document.createElement('script');
+		bdcs.type = 'text/javascript';
+		bdcs.async = true;
+		bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=12692636141773082327' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(bdcs, s);
+	})();
+</script> -->
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png">
+            <h2 id="name">子 墨</h2>
+            <h3 id="title">胸怀山与海，向往一缕阳光</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>ShenZhen, China</span>
+            <!-- <a id="follow" target="_blank" href="https://github.com/xwc010/">关注我</a> -->
+            <a id="follow" target="_blank" href="https://github.com/xwc010/">Follow</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                23
+                <span>文章</span>
+                <!-- <span>POSTS</span> -->
+            </div>
+            <div class="article-info-block">
+                39
+                <span>标签</span>
+                
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/xwc010" target="_blank" title="github" class="tooltip">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://weibo.com/deizs" target="_blank" title="weibo" class="tooltip">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.facebook.com/profile.php?id=100009675581054" target="_blank" title="facebook" class="tooltip">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://www.linkedin.com/in/xwc010" target="_blank" title="linkedin" class="tooltip">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/atom.xml" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+
+        
+    </div>
+
+    <div class="inner profile-inner">
+		
+        <div class="app-info profile-block">
+        	<a href="http://shouji.360tpcdn.com/150918/e6e002ccc9d6555b7c12a3f93a88b12a/com.tad.ifavorite.ui_15.apk">
+            <img id="qrcode" src="/css/images/qrcode.png">
+            </a>
+            <a id="name" target="_blank" href="http://shouji.360tpcdn.com/150918/e6e002ccc9d6555b7c12a3f93a88b12a/com.tad.ifavorite.ui_15.apk">iFavorite美图社区</a>
+        </div>
+        
+    </div>
+</aside>
+
+
+            
+            <section id="main"><article id="post-Android-Des" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Android DES加解密的两种实现方式
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/08/04/Android-Des/">
+            <time datetime="2017-08-04T11:55:07.000Z" itemprop="datePublished">2017-08-04</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Android/">Android</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Android/">Android</a>, <a class="tag-link" href="/tags/DES/">DES</a>, <a class="tag-link" href="/tags/Java/">Java</a>, <a class="tag-link" href="/tags/数据加解密/">数据加解密</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>解决Java DES与Android DES不兼容问题</p>
+<h2 id="【方式一】用于加密的秘钥长度不限"><a href="#【方式一】用于加密的秘钥长度不限" class="headerlink" title="【方式一】用于加密的秘钥长度不限"></a>【方式一】用于加密的秘钥长度不限</h2><a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br></pre></td><td class="code"><pre><span class="line">import android.content.Context;</span><br><span class="line">import android.util.Log;</span><br><span class="line"></span><br><span class="line">import java.io.BufferedReader;</span><br><span class="line">import java.io.File;</span><br><span class="line">import java.io.FileInputStream;</span><br><span class="line">import java.io.FileOutputStream;</span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.io.InputStream;</span><br><span class="line">import java.io.InputStreamReader;</span><br><span class="line">import java.io.OutputStream;</span><br><span class="line">import java.security.InvalidAlgorithmParameterException;</span><br><span class="line">import java.security.InvalidKeyException;</span><br><span class="line">import java.security.NoSuchAlgorithmException;</span><br><span class="line">import java.util.HashMap;</span><br><span class="line">import java.util.Map;</span><br><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">import javax.crypto.Cipher;</span><br><span class="line">import javax.crypto.CipherInputStream;</span><br><span class="line">import javax.crypto.CipherOutputStream;</span><br><span class="line">import javax.crypto.NoSuchPaddingException;</span><br><span class="line">import javax.crypto.SecretKey;</span><br><span class="line">import javax.crypto.SecretKeyFactory;</span><br><span class="line">import javax.crypto.spec.DESKeySpec;</span><br><span class="line">import javax.crypto.spec.IvParameterSpec;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 加解密所用秘钥长度不限</span><br><span class="line"> * Created by xwc on 2017/8/1.</span><br><span class="line"> */</span><br><span class="line">public class AndroidDESOne &#123;</span><br><span class="line"></span><br><span class="line">    private static SecretKey key;</span><br><span class="line">    private static byte[] iv = &#123;1,2,3,4,5,6,7,8&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 生成密钥key对象</span><br><span class="line">     * @param keyStr 密钥字符串</span><br><span class="line">     * @<span class="built_in">return</span> 密钥对象</span><br><span class="line">     * @throws InvalidKeyException</span><br><span class="line">     * @throws NoSuchAlgorithmException</span><br><span class="line">     * @throws Exception</span><br><span class="line">     */</span><br><span class="line">    private static SecretKey keyGenerator(String keyStr) throws Exception &#123;</span><br><span class="line">//        byte input[] = HexStr2Bytes(keyStr);</span><br><span class="line">        DESKeySpec desKey = new DESKeySpec(keyStr.getBytes());</span><br><span class="line">        //创建一个密匙工厂，然后用它把DESKeySpec转换成</span><br><span class="line">        SecretKeyFactory keyFactory = SecretKeyFactory.getInstance(<span class="string">"DES"</span>);</span><br><span class="line">        SecretKey securekey = keyFactory.generateSecret(desKey);</span><br><span class="line">        <span class="built_in">return</span> securekey;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 同步解析Adjust广告配置文件</span><br><span class="line">     * @param context</span><br><span class="line">     */</span><br><span class="line">    private static void decryptDesSync(Context context, String assetsFileName)&#123;</span><br><span class="line"></span><br><span class="line">        Map&lt;String, String&gt; map = new HashMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        String savePath = context.getExternalCacheDir().getPath()+ File.separator + <span class="string">"Cache.csv"</span>;</span><br><span class="line">        Log.i(<span class="string">"CSV"</span>, <span class="string">"savePath\n"</span> + savePath);</span><br><span class="line">        File saveFile = new File(savePath);</span><br><span class="line"></span><br><span class="line">        InputStream encryptIn = null;</span><br><span class="line">        OutputStream decryptOut = null;</span><br><span class="line">        CipherOutputStream decryptCOS = null;</span><br><span class="line"></span><br><span class="line">        try &#123;</span><br><span class="line">            IvParameterSpec zeroIv = new IvParameterSpec(iv);</span><br><span class="line">//          IvParameterSpec zeroIv = new IvParameterSpec(new byte[8]);</span><br><span class="line">//            SecretKeySpec key = new SecretKeySpec(SecretKey.getBytes(), <span class="string">"DES"</span>);</span><br><span class="line">            Cipher cipher = Cipher.getInstance(<span class="string">"DES/CBC/PKCS5Padding"</span>);</span><br><span class="line">            cipher.init(Cipher.DECRYPT_MODE, key, zeroIv);</span><br><span class="line"></span><br><span class="line">            // 把解密后的数据保存至制定文件</span><br><span class="line">            encryptIn = context.getAssets().open(assetsFileName);</span><br><span class="line">            decryptOut = new FileOutputStream(saveFile);</span><br><span class="line">            decryptCOS = new CipherOutputStream(decryptOut, cipher);</span><br><span class="line">            byte[] buffer = new byte[1024];</span><br><span class="line">            int length;</span><br><span class="line">            <span class="keyword">while</span> ((length = encryptIn.read(buffer)) &gt;= 0) &#123;</span><br><span class="line">                decryptCOS.write(buffer, 0, length);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 直接读取解密后的数据</span><br><span class="line">//            InputStream <span class="keyword">in</span> = context.getAssets().open(secretFileName);</span><br><span class="line">//            CipherInputStream cin = new CipherInputStream(<span class="keyword">in</span>, cipher);</span><br><span class="line">//            BufferedReader reader = new BufferedReader(new InputStreamReader(cin));</span><br><span class="line">//            String line = null;</span><br><span class="line">//            <span class="keyword">while</span> ((line = reader.readLine()) != null) &#123;</span><br><span class="line">//                System.out.println(line);</span><br><span class="line">//            &#125;</span><br><span class="line"></span><br><span class="line">        &#125; catch (NoSuchAlgorithmException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (NoSuchPaddingException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (InvalidKeyException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (InvalidAlgorithmParameterException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;finally &#123;</span><br><span class="line">            try &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span>(encryptIn != null)&#123;</span><br><span class="line">                    encryptIn.close();</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span>(decryptOut != null)&#123;</span><br><span class="line">                    decryptOut.close();</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span>(decryptCOS != null)&#123;</span><br><span class="line">                    decryptCOS.close();</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span>(saveFile.exists())&#123;</span><br><span class="line">                    saveFile.delete();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; catch (IOException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 异步解密文件</span><br><span class="line">     * @param context</span><br><span class="line">     * @param assetsFileName assets目录下DES加密后的文件</span><br><span class="line">     */</span><br><span class="line">    private static void decryptDesAsync(final Context context, final String assetsFileName)&#123;</span><br><span class="line"></span><br><span class="line">        new Thread(new <span class="function"><span class="title">Runnable</span></span>() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void <span class="function"><span class="title">run</span></span>() &#123;</span><br><span class="line">                decryptDesSync(context, assetsFileName);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;).start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 初始化秘钥</span><br><span class="line">     * @param pkg</span><br><span class="line">     */</span><br><span class="line">    private static void initSecretKey(String pkg)&#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            key = keyGenerator(str2HexStr(pkg)); // new String(pkg.getBytes())</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            System.out.println(<span class="string">"&gt;&gt;&gt; initSecretKey Exception"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 文件file进行加密并保存目标文件destFile中</span><br><span class="line">     * @param file   要加密的文件 如c:/<span class="built_in">test</span>/srcFile.txt</span><br><span class="line">     * @param destFile 加密后存放的文件名 如c:/加密后文件.txt</span><br><span class="line">     */</span><br><span class="line">    private static void encrypt(String file, String destFile) throws Exception &#123;</span><br><span class="line">        IvParameterSpec zeroIv = new IvParameterSpec(iv);</span><br><span class="line">//        IvParameterSpec zeroIv = new IvParameterSpec(new byte[8]);</span><br><span class="line">//        SecretKeySpec key = new SecretKeySpec(SecretKey.getBytes(), <span class="string">"DES"</span>);</span><br><span class="line">        Cipher cipher = Cipher.getInstance(<span class="string">"DES/CBC/PKCS5Padding"</span>);</span><br><span class="line">        cipher.init(Cipher.ENCRYPT_MODE, key, zeroIv);</span><br><span class="line"></span><br><span class="line">        InputStream is = new FileInputStream(file);</span><br><span class="line">        OutputStream out = new FileOutputStream(destFile);</span><br><span class="line">        CipherInputStream cis = new CipherInputStream(is, cipher);</span><br><span class="line">        byte[] buffer = new byte[1024];</span><br><span class="line">        int r;</span><br><span class="line">        <span class="keyword">while</span> ((r = cis.read(buffer)) &gt; 0) &#123;</span><br><span class="line">            out.write(buffer, 0, r);</span><br><span class="line">        &#125;</span><br><span class="line">        cis.close();</span><br><span class="line">        is.close();</span><br><span class="line">        out.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 文件采用DES算法解密文件</span><br><span class="line">     * @param file 已加密的文件 如c:/加密后文件.txt</span><br><span class="line">     *         * @param destFile</span><br><span class="line">     *         解密后存放的文件名 如c:/ <span class="built_in">test</span>/解密后文件.txt</span><br><span class="line">     */</span><br><span class="line">    private static void decrypt(String file, String dest) throws Exception &#123;</span><br><span class="line">        IvParameterSpec zeroIv = new IvParameterSpec(iv);</span><br><span class="line">//      IvParameterSpec zeroIv = new IvParameterSpec(new byte[8]);</span><br><span class="line">//        SecretKeySpec key = new SecretKeySpec(SecretKey.getBytes(), <span class="string">"DES"</span>);</span><br><span class="line">        Cipher cipher = Cipher.getInstance(<span class="string">"DES/CBC/PKCS5Padding"</span>);</span><br><span class="line">        cipher.init(Cipher.DECRYPT_MODE, key, zeroIv);</span><br><span class="line"></span><br><span class="line">        InputStream is = new FileInputStream(file);</span><br><span class="line">        OutputStream out = new FileOutputStream(dest);</span><br><span class="line">        CipherOutputStream cos = new CipherOutputStream(out, cipher);</span><br><span class="line">        byte[] buffer = new byte[1024];</span><br><span class="line">        int r;</span><br><span class="line">        <span class="keyword">while</span> ((r = is.read(buffer)) &gt;= 0) &#123;</span><br><span class="line">            System.out.println();</span><br><span class="line">            cos.write(buffer, 0, r);</span><br><span class="line">        &#125;</span><br><span class="line">        cos.close();</span><br><span class="line">        out.close();</span><br><span class="line">        is.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 字符串转换成十六进制字符串</span><br><span class="line">     * @param str 待转换的ASCII字符串</span><br><span class="line">     * @<span class="built_in">return</span> String 每个Byte之间空格分隔，如: [61 6C 6B]</span><br><span class="line">     */</span><br><span class="line">    private static String str2HexStr(String str)&#123;</span><br><span class="line">        char[] chars = <span class="string">"0123456789ABCDEF"</span>.toCharArray();</span><br><span class="line">        StringBuilder sb = new StringBuilder(<span class="string">""</span>);</span><br><span class="line">        byte[] bs = str.getBytes();</span><br><span class="line">        int bit;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (int i = 0; i &lt; bs.length; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            bit = (bs[i] &amp; 0x0f0) &gt;&gt; 4;</span><br><span class="line">            sb.append(chars[bit]);</span><br><span class="line">            bit = bs[i] &amp; 0x0f;</span><br><span class="line">            sb.append(chars[bit]);</span><br><span class="line">            sb.append(<span class="string">' '</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> sb.toString().trim();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 从十六进制字符串到字节数组转换</span><br><span class="line">    public static byte[] HexStr2Bytes(String hexstr) &#123;</span><br><span class="line">        byte[] b = new byte[hexstr.length() / 2];</span><br><span class="line">        int j = 0;</span><br><span class="line">        <span class="keyword">for</span> (int i = 0; i &lt; b.length; i++) &#123;</span><br><span class="line">            char c0 = hexstr.charAt(j++);</span><br><span class="line">            char c1 = hexstr.charAt(j++);</span><br><span class="line">            b[i] = (byte) ((parse(c0) &lt;&lt; 4) | parse(c1));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> b;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static int parse(char c) &#123;</span><br><span class="line">        <span class="keyword">if</span> (c &gt;= <span class="string">'a'</span>) <span class="built_in">return</span> (c - <span class="string">'a'</span> + 10) &amp; 0x0f;</span><br><span class="line">        <span class="keyword">if</span> (c &gt;= <span class="string">'A'</span>) <span class="built_in">return</span> (c - <span class="string">'A'</span> + 10) &amp; 0x0f;</span><br><span class="line">        <span class="built_in">return</span> (c - <span class="string">'0'</span>) &amp; 0x0f;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) throws Exception &#123;</span><br><span class="line">        initSecretKey(<span class="string">"com.yifan"</span>);</span><br><span class="line">        encrypt(<span class="string">"E:\\test.csv"</span>, <span class="string">"E:\\adjust"</span>); //加密</span><br><span class="line">        System.out.println(<span class="string">"加密完成"</span>);</span><br><span class="line">        decrypt(<span class="string">"E:\\adjust"</span>, <span class="string">"E:\\adjust.csv"</span>); //解密</span><br><span class="line">        System.out.println(<span class="string">"解密完成"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="【方式二】用于加密的秘钥实际最长为8位，不足自动补充"><a href="#【方式二】用于加密的秘钥实际最长为8位，不足自动补充" class="headerlink" title="【方式二】用于加密的秘钥实际最长为8位，不足自动补充"></a>【方式二】用于加密的秘钥实际最长为8位，不足自动补充</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br></pre></td><td class="code"><pre><span class="line">import android.content.Context;</span><br><span class="line">import android.util.Log;</span><br><span class="line"></span><br><span class="line">import java.io.BufferedReader;</span><br><span class="line">import java.io.FileInputStream;</span><br><span class="line">import java.io.FileNotFoundException;</span><br><span class="line">import java.io.FileOutputStream;</span><br><span class="line">import java.io.InputStream;</span><br><span class="line">import java.io.InputStreamReader;</span><br><span class="line">import java.io.OutputStream;</span><br><span class="line">import java.security.Key;</span><br><span class="line">import java.util.HashMap;</span><br><span class="line">import java.util.Map;</span><br><span class="line"></span><br><span class="line">import javax.crypto.Cipher;</span><br><span class="line">import javax.crypto.CipherInputStream;</span><br><span class="line">import javax.crypto.spec.SecretKeySpec;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 加解密所用秘钥真实长度为最长8位，不够就用0补</span><br><span class="line"> * Created by xwc on 2017/8/1.</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">public class AndroidDESTwo &#123;</span><br><span class="line"></span><br><span class="line">    private Key mKey; // 加密解密的key</span><br><span class="line">    private Cipher mDecryptCipher; // 解密的密码</span><br><span class="line">    private Cipher mEncryptCipher; // 加密的密码</span><br><span class="line">    private Context context;</span><br><span class="line"></span><br><span class="line">    public AndroidDESTwo(String key) throws Exception &#123;</span><br><span class="line">        initKey(key);</span><br><span class="line">        initCipher();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public AndroidDESTwo(Context context, String key) throws Exception &#123;</span><br><span class="line">        this.context = context;</span><br><span class="line">        initKey(key);</span><br><span class="line">        initCipher();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 创建一个加密解密的key</span><br><span class="line">     * @param keyRule</span><br><span class="line">     */</span><br><span class="line">    public void initKey(String keyRule) &#123;</span><br><span class="line">        byte[] keyByte = keyRule.getBytes();</span><br><span class="line">        // 创建一个空的八位数组,默认情况下为0</span><br><span class="line">        byte[] byteTemp = new byte[8];</span><br><span class="line">        // 将用户指定的规则转换成八位数组</span><br><span class="line">        <span class="keyword">for</span> (int i = 0; i &lt; byteTemp.length &amp;&amp; i &lt; keyByte.length; i++) &#123;</span><br><span class="line">            byteTemp[i] = keyByte[i];</span><br><span class="line">        &#125;</span><br><span class="line">        mKey = new SecretKeySpec(byteTemp, <span class="string">"DES"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /***</span><br><span class="line">     * 初始化加载密码</span><br><span class="line">     * @throws Exception</span><br><span class="line">     */</span><br><span class="line">    private void initCipher() throws Exception &#123;</span><br><span class="line">        mEncryptCipher = Cipher.getInstance(<span class="string">"DES"</span>);</span><br><span class="line">        mEncryptCipher.init(Cipher.ENCRYPT_MODE, mKey);</span><br><span class="line"></span><br><span class="line">        mDecryptCipher = Cipher.getInstance(<span class="string">"DES"</span>);</span><br><span class="line">        mDecryptCipher.init(Cipher.DECRYPT_MODE, mKey);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 加密文件</span><br><span class="line">     * @param filePath 需要加密的文件路径</span><br><span class="line">     * @param savePath 加密后保存的位置</span><br><span class="line">     * @throws FileNotFoundException</span><br><span class="line">     */</span><br><span class="line">    public void encryptFile(String filePath, String savePath) throws FileNotFoundException &#123;</span><br><span class="line">        encryptFile(new FileInputStream(filePath), savePath);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 加密文件</span><br><span class="line">     * @param <span class="keyword">in</span></span><br><span class="line">     * @param savePath 加密后保存的位置</span><br><span class="line">     */</span><br><span class="line">    public void encryptFile(InputStream <span class="keyword">in</span>, String savePath) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">in</span> == null) &#123;</span><br><span class="line">            System.out.println(<span class="string">"inputstream is null"</span>);</span><br><span class="line">            <span class="built_in">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        try &#123;</span><br><span class="line">            CipherInputStream cin = new CipherInputStream(<span class="keyword">in</span>, mEncryptCipher);</span><br><span class="line">            OutputStream os = new FileOutputStream(savePath);</span><br><span class="line">            byte[] bytes = new byte[1024];</span><br><span class="line">            int len = -1;</span><br><span class="line">            <span class="keyword">while</span> ((len = cin.read(bytes)) &gt; 0) &#123;</span><br><span class="line">                os.write(bytes, 0, len);</span><br><span class="line">                os.flush();</span><br><span class="line">            &#125;</span><br><span class="line">            os.close();</span><br><span class="line">            cin.close();</span><br><span class="line">            in.close();</span><br><span class="line">            System.out.println(<span class="string">"加密成功"</span>);</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"加密失败"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 同步解密文件</span><br><span class="line">     * @param context</span><br><span class="line">     * @param assetsFileName assets目录下DES加密后的文件</span><br><span class="line">     */</span><br><span class="line">    public void decryptDesSync(Context context, String assetsFileName) &#123;</span><br><span class="line"></span><br><span class="line">        try &#123;</span><br><span class="line">            InputStream <span class="keyword">in</span> = context.getAssets().open(assetsFileName);</span><br><span class="line">            CipherInputStream cin = new CipherInputStream(<span class="keyword">in</span>, mDecryptCipher);</span><br><span class="line">            BufferedReader reader = new BufferedReader(new InputStreamReader(cin));</span><br><span class="line">            String line = null;</span><br><span class="line">            <span class="keyword">while</span> ((line = reader.readLine()) != null) &#123;</span><br><span class="line">                System.out.println(line);</span><br><span class="line">            &#125;</span><br><span class="line">            reader.close();</span><br><span class="line">            cin.close();</span><br><span class="line">            in.close();</span><br><span class="line">            System.out.println(<span class="string">"解密成功"</span>);</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"解密失败"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 异步解密文件</span><br><span class="line">     * @param context</span><br><span class="line">     * @param assetsFileName assets目录下DES加密后的文件</span><br><span class="line">     */</span><br><span class="line">    public void decryptDesAsync(final Context context, final String assetsFileName)&#123;</span><br><span class="line"></span><br><span class="line">        new Thread(new <span class="function"><span class="title">Runnable</span></span>() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void <span class="function"><span class="title">run</span></span>() &#123;</span><br><span class="line">                decryptDesSync(context, assetsFileName);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;).start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 解密文件</span><br><span class="line">     * @param filePath 文件路径</span><br><span class="line">     * @throws Exception</span><br><span class="line">     */</span><br><span class="line">    public void decryptFile(String filePath) throws Exception &#123;</span><br><span class="line">        decryptFile(new FileInputStream(filePath));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 解密文件</span><br><span class="line">     * @param <span class="keyword">in</span></span><br><span class="line">     */</span><br><span class="line">    public void decryptFile(InputStream <span class="keyword">in</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">in</span> == null) &#123;</span><br><span class="line">            System.out.println(<span class="string">"inputstream is null"</span>);</span><br><span class="line">            <span class="built_in">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        try &#123;</span><br><span class="line">            CipherInputStream cin = new CipherInputStream(<span class="keyword">in</span>, mDecryptCipher);</span><br><span class="line">            BufferedReader reader = new BufferedReader(new InputStreamReader(cin));</span><br><span class="line">            String line = null;</span><br><span class="line">            <span class="keyword">while</span> ((line = reader.readLine()) != null) &#123;</span><br><span class="line">                System.out.println(line);</span><br><span class="line">            &#125;</span><br><span class="line">            reader.close();</span><br><span class="line">            cin.close();</span><br><span class="line">            in.close();</span><br><span class="line">            System.out.println(<span class="string">"解密成功"</span>);</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"解密失败"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) throws Exception &#123;</span><br><span class="line">        AndroidDESTwo fileDES = new AndroidDESTwo(<span class="string">"com.xwc.des"</span>);</span><br><span class="line">        fileDES.encryptFile(<span class="string">"D:/encrypt.txt"</span>, <span class="string">"D:/decrypt"</span>);  //加密</span><br><span class="line">        fileDES.decryptFile(<span class="string">"D:/decrypt"</span>); //解密</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.zimob.cc/2017/08/04/Android-Des/" data-id="cjp0mied4005jb0vh6sxmuxwu" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/08/08/developer-weekly-1/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    Android开发者e周报 第1期
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+	<div id="commentContainer"></div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap widget-list">
+    	<!-- <h3 class="widget-title">链接</h3> -->
+        <h3 class="widget-title">友情链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://blog.csdn.net/xwc010">CSDN博客</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.jianshu.com/u/50fde98da15e">简书</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+        
+    <div class="widget-wrap">
+    	<!-- <h3 class="widget-title">分类</h3> -->
+        <h3 class="widget-title">文章分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">20</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/周报/">周报</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android/开源/">开源</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android/开源系列/">开源系列</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android/黑科技/">黑科技</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/人生感悟/">人生感悟</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/架构/">架构</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+    	<!-- <h3 class="widget-title">标签云</h3> -->
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/ASimpleCache/" style="font-size: 10px;">ASimpleCache</a> <a href="/tags/Activity/" style="font-size: 10px;">Activity</a> <a href="/tags/Android/" style="font-size: 20px;">Android</a> <a href="/tags/Bilibili/" style="font-size: 10px;">Bilibili</a> <a href="/tags/Collection/" style="font-size: 10px;">Collection</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/DiskLruCache/" style="font-size: 10px;">DiskLruCache</a> <a href="/tags/ExoPlayer/" style="font-size: 10px;">ExoPlayer</a> <a href="/tags/FFmpeg/" style="font-size: 10px;">FFmpeg</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Glide/" style="font-size: 10px;">Glide</a> <a href="/tags/JNI/" style="font-size: 12.86px;">JNI</a> <a href="/tags/JakeWharton/" style="font-size: 12.86px;">JakeWharton</a> <a href="/tags/Java/" style="font-size: 17.14px;">Java</a> <a href="/tags/NDK/" style="font-size: 12.86px;">NDK</a> <a href="/tags/ORM/" style="font-size: 10px;">ORM</a> <a href="/tags/OkHttp/" style="font-size: 10px;">OkHttp</a> <a href="/tags/Picasso/" style="font-size: 10px;">Picasso</a> <a href="/tags/Retrofit/" style="font-size: 10px;">Retrofit</a> <a href="/tags/Vitamio/" style="font-size: 10px;">Vitamio</a> <a href="/tags/Volley/" style="font-size: 10px;">Volley</a> <a href="/tags/adb/" style="font-size: 11.43px;">adb</a> <a href="/tags/ijkplayer/" style="font-size: 10px;">ijkplayer</a> <a href="/tags/人性的弱点/" style="font-size: 10px;">人性的弱点</a> <a href="/tags/周报/" style="font-size: 15.71px;">周报</a> <a href="/tags/图片加载框架/" style="font-size: 10px;">图片加载框架</a> <a href="/tags/开源/" style="font-size: 14.29px;">开源</a> <a href="/tags/开源系列/" style="font-size: 10px;">开源系列</a> <a href="/tags/开源网站/" style="font-size: 10px;">开源网站</a> <a href="/tags/开源项目/" style="font-size: 18.57px;">开源项目</a> <a href="/tags/数据加解密/" style="font-size: 10px;">数据加解密</a> <a href="/tags/架构/" style="font-size: 10px;">架构</a> <a href="/tags/线程安全/" style="font-size: 10px;">线程安全</a> <a href="/tags/缓存框架/" style="font-size: 10px;">缓存框架</a> <a href="/tags/网络框架/" style="font-size: 10px;">网络框架</a> <a href="/tags/视频处理/" style="font-size: 10px;">视频处理</a> <a href="/tags/财富/" style="font-size: 10px;">财富</a> <a href="/tags/黑科技/" style="font-size: 10px;">黑科技</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <!-- <h3 class="widget-title">最新文章</h3> -->
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/28/blog/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+                            <p class="item-title"><a href="/2018/11/28/blog/" class="title">blog</a></p>
+                            <p class="item-date"><time datetime="2018-11-28T03:36:24.000Z" itemprop="datePublished">2018-11-28</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/09/10/collections-thread/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Java/">Java</a></p>
+                            <p class="item-title"><a href="/2018/09/10/collections-thread/" class="title">【JAVA】集合Collection线程安全的几种使用</a></p>
+                            <p class="item-date"><time datetime="2018-09-10T09:33:13.000Z" itemprop="datePublished">2018-09-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/04/10/framework-group/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/架构/">架构</a></p>
+                            <p class="item-title"><a href="/2018/04/10/framework-group/" class="title">【转载】各大互联网公司架构演进之路汇总</a></p>
+                            <p class="item-date"><time datetime="2018-04-10T03:13:08.000Z" itemprop="datePublished">2018-04-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/12/developer-weekly-6/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Android/周报/">周报</a></p>
+                            <p class="item-title"><a href="/2017/09/12/developer-weekly-6/" class="title">Android开发者e周报 第6期</a></p>
+                            <p class="item-date"><time datetime="2017-09-12T07:38:41.000Z" itemprop="datePublished">2017-09-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/05/developer-weekly-5/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Android/周报/">周报</a></p>
+                            <p class="item-title"><a href="/2017/09/05/developer-weekly-5/" class="title">Android开发者e周报 第5期</a></p>
+                            <p class="item-date"><time datetime="2017-09-05T04:38:41.000Z" itemprop="datePublished">2017-09-05</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 子 墨
+            <br>
+            The unthinking knowledge does not belong to you.
+            <!-- Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. -->
+            <br>
+            <span id="busuanzi_container_site_uv"> 
+  				亘古永蓝 浏览量 <span id="busuanzi_value_site_pv"></span>
+			</span>
+        </div>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <!-- google广告 -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- 测试 -->
+	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3265299695901949" data-ad-slot="3518539194" data-ad-format="auto"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</footer>
+        
+    
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			owner: 'xwc010',
+			repo: 'xwc010.github.io',
+			oauth: {
+				client_id: '40a626053bffc7cd46e4',
+				client_secret: '4994eee39ee4b1e5ccbe6fbb5335c7e5919b1058',
+			},
+		})
+		gitment.render('commentContainer')
+	</script>
+	
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+    
+    <!-- google广告 -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-format="fluid"
+        data-ad-layout="image-top"
+        data-ad-layout-key="-8f+29-ff+cn+o3"
+        data-ad-client="ca-pub-3265299695901949"
+        data-ad-slot="5146960411">
+    </ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script> 
+    <!-- 友盟统计 -->
+    <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1263586266'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263586266%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+    </script> 
+</body>
+</html>

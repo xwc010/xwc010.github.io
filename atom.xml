@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>亘古永蓝</title>
+  
+  <subtitle>知识的天空之城</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.zimob.cc/"/>
+  <updated>2018-11-28T03:37:18.388Z</updated>
+  <id>http://blog.zimob.cc/</id>
+  
+  <author>
+    <name>子 墨</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blog</title>
+    <link href="http://blog.zimob.cc/2018/11/28/blog/"/>
+    <id>http://blog.zimob.cc/2018/11/28/blog/</id>
+    <published>2018-11-28T03:36:24.000Z</published>
+    <updated>2018-11-28T03:37:18.388Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你好，博客世界欢迎你！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【JAVA】集合Collection线程安全的几种使用</title>
+    <link href="http://blog.zimob.cc/2018/09/10/collections-thread/"/>
+    <id>http://blog.zimob.cc/2018/09/10/collections-thread/</id>
+    <published>2018-09-10T09:33:13.000Z</published>
+    <updated>2018-11-16T04:16:09.083Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;【集合按线程安全与否分类】&quot;&gt;&lt;a href=&quot;#【集合按线程安全与否分类】&quot; class=&quot;headerlink&quot; title=&quot;【集合按线程安全与否分类】&quot;&gt;&lt;/a&gt;【集合按线程安全与否分类】&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;线程安全：Vector、HashT
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://blog.zimob.cc/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://blog.zimob.cc/tags/Java/"/>
+    
+      <category term="线程安全" scheme="http://blog.zimob.cc/tags/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="Collection" scheme="http://blog.zimob.cc/tags/Collection/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【转载】各大互联网公司架构演进之路汇总</title>
+    <link href="http://blog.zimob.cc/2018/04/10/framework-group/"/>
+    <id>http://blog.zimob.cc/2018/04/10/framework-group/</id>
+    <published>2018-04-10T03:13:08.000Z</published>
+    <updated>2018-11-16T04:16:09.086Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a name=&quot;t0&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.hollischuang.com%2Farchives%2F728&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大型网站架构演化历程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.hollischuang.com%2Farchives%2F1132&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大型网站架构技术一览&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Web&quot;&gt;&lt;a href=&quot;#Web&quot; class=&quot;headerlink&quot; title=&quot;Web&quot;&gt;&lt;/a&gt;Web&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.infoq.com%2Fcn%2Farticles%2Ftechnical-architecture-of-alipay-and-ant-check-later&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;支付宝和蚂蚁花呗的技术架构及实践&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.infoq.com%2Fcn%2Fpresentations%2Fjuhuasuan-architecture-evolution-system-optimization&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;聚划算架构演进和系统优化&lt;/a&gt; （视频+PPT）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.infoq.com%2Fcn%2Fnews%2F2014%2F06%2Ftaobao-trading-system&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;淘宝交易系统演进之路&lt;/a&gt; （专访）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fhistory.programmer.com.cn%2F7578%2F&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;淘宝数据魔方技术架构解析&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.infoq.com%2Fcn%2Fpresentations%2Ftaobao-technology-development-and-architecture-experience&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;淘宝技术发展历程和架构经验分享&lt;/a&gt;（视频+PPT）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA4Nzg5Nzc5OA%3D%3D%26mid%3D2651660980%26idx%3D1%26sn%3D640c3d2280d7657f236434ff6ba0b22b%23rd&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;阿里游戏高可用架构设计实践&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.infoq.com%2Fcn%2Fpresentations%2Fpractise-of-stability-architecture-in-fast-transition-period&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;高德——快速转型时期的稳定性架构实践&lt;/a&gt;（视频+PPT）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fmy.oschina.net%2Fxianggao%2Fblog%2F524943&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;秒杀系统架构分析与实战&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.infoq.com%2Fcn%2Fpresentations%2Ftencent-community-search&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;腾讯社区搜索架构演进&lt;/a&gt;（视频+PPT）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.csdn.net%2Farticle%2F2014-11-11%2F2822576&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;京东峰值系统设计&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fwww.cnblogs.com%2Fmindwind%2Fp%2F5017591.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;京东咚咚架构演进&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzAwMDU1MTE1OQ%3D%3D%26mid%3D2653547431%26idx%3D1%26sn%3D744a42639e7c362a05aacbfbed6a988c%26scene%3D0%23wechat_redirect&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大促系统全流量压测及稳定性保证——京东交易架构分享（含PPT）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzI4NTA1MDEwNg%3D%3D%26mid%3D2650756103%26idx%3D1%26sn%3Dfd90de97fa042602645be9a576e78926%26scene%3D0%26key%3D77421cf58af4a653a6275c36ad6eecd461c57ad7698912a85971328e95d8929725dbc641258850220dc8bb67fa97d3f2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;京东618实践：一元抢宝系统的数据库架构优化&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://link.juejin.im/?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIwODA4NjMwNA%3D%3D%26mid%3D2652897861%26idx%3D1%26sn%3Df2804fd064c7d3ea86554c187ae03db7%26scene%3D0%23wechat_redirect&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;京东上千页面搭建基石——CMS前后端分离演进史&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="架构" scheme="http://blog.zimob.cc/categories/%E6%9E%B6%E6%9E%84/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="架构" scheme="http://blog.zimob.cc/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android开发者e周报 第6期</title>
+    <link href="http://blog.zimob.cc/2017/09/12/developer-weekly-6/"/>
+    <id>http://blog.zimob.cc/2017/09/12/developer-weekly-6/</id>
+    <published>2017-09-12T07:38:41.000Z</published>
+    <updated>2018-11-16T04:16:09.086Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android开发者e周报往期&quot;&gt;&lt;a href=&quot;#Android开发者e周报往期&quot; class=&quot;headerlink&quot; title=&quot;Android开发者e周报往期&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报往期&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/22/developer-weekly-3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第3期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/29/developer-weekly-4/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第4期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/09/05/developer-weekly-5/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第5期&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;新闻&quot;&gt;&lt;a href=&quot;#新闻&quot; class=&quot;headerlink&quot; title=&quot;新闻&quot;&gt;&lt;/a&gt;新闻&lt;/h2&gt;&lt;h5 id=&quot;1、Android-8-1将抛弃3-5mm插孔&quot;&gt;&lt;a href=&quot;#1、Android-8-1将抛弃3-5mm插孔&quot; class=&quot;headerlink&quot; title=&quot;1、Android 8.1将抛弃3.5mm插孔&quot;&gt;&lt;/a&gt;1、&lt;a href=&quot;http://www.cnbeta.com/articles/tech/649287.htm?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 8.1将抛弃3.5mm插孔&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;2、在系统安全方面，Android-8-0-做出了一些重要改变&quot;&gt;&lt;a href=&quot;#2、在系统安全方面，Android-8-0-做出了一些重要改变&quot; class=&quot;headerlink&quot; title=&quot;2、在系统安全方面，Android 8.0 做出了一些重要改变&quot;&gt;&lt;/a&gt;2、&lt;a href=&quot;http://www.ifanr.com/903926?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;在系统安全方面，Android 8.0 做出了一些重要改变&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;3、XDA开发论坛已提供34款手机Android-8-0-ROM下载&quot;&gt;&lt;a href=&quot;#3、XDA开发论坛已提供34款手机Android-8-0-ROM下载&quot; class=&quot;headerlink&quot; title=&quot;3、XDA开发论坛已提供34款手机Android 8.0 ROM下载&quot;&gt;&lt;/a&gt;3、&lt;a href=&quot;http://www.cnbeta.com/articles/soft/650195.htm?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;XDA开发论坛已提供34款手机Android 8.0 ROM下载&lt;/a&gt;&lt;/h5&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/tags/%E5%91%A8%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android开发者e周报 第5期</title>
+    <link href="http://blog.zimob.cc/2017/09/05/developer-weekly-5/"/>
+    <id>http://blog.zimob.cc/2017/09/05/developer-weekly-5/</id>
+    <published>2017-09-05T04:38:41.000Z</published>
+    <updated>2018-11-16T04:16:09.085Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android开发者e周报往期&quot;&gt;&lt;a href=&quot;#Android开发者e周报往期&quot; class=&quot;headerlink&quot; title=&quot;Android开发者e周报往期&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报往期&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/08/developer-weekly-1/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第1期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/15/developer-weekly-2/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第2期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/22/developer-weekly-3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第3期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/29/developer-weekly-4/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第4期&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;新闻&quot;&gt;&lt;a href=&quot;#新闻&quot; class=&quot;headerlink&quot; title=&quot;新闻&quot;&gt;&lt;/a&gt;新闻&lt;/h2&gt;&lt;h5 id=&quot;1、ARCore：Android-规模的增强现实&quot;&gt;&lt;a href=&quot;#1、ARCore：Android-规模的增强现实&quot; class=&quot;headerlink&quot; title=&quot;1、ARCore：Android 规模的增强现实&quot;&gt;&lt;/a&gt;1、&lt;a href=&quot;https://mp.weixin.qq.com/s/5xQoNPGnhfktm2-zn2_f7A?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ARCore：Android 规模的增强现实&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;2、谷歌更新Android-Wear政策：鼓励开发可独立运行的手表应用&quot;&gt;&lt;a href=&quot;#2、谷歌更新Android-Wear政策：鼓励开发可独立运行的手表应用&quot; class=&quot;headerlink&quot; title=&quot;2、谷歌更新Android Wear政策：鼓励开发可独立运行的手表应用&quot;&gt;&lt;/a&gt;2、&lt;a href=&quot;http://www.cnbeta.com/articles/soft/647391.htm?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;谷歌更新Android Wear政策：鼓励开发可独立运行的手表应用&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;3、Google-发布-Google-I-O-2017-for-Android-的源代码&quot;&gt;&lt;a href=&quot;#3、Google-发布-Google-I-O-2017-for-Android-的源代码&quot; class=&quot;headerlink&quot; title=&quot;3、Google 发布 Google I/O 2017 for Android 的源代码&quot;&gt;&lt;/a&gt;3、&lt;a href=&quot;http://developers.googleblog.cn/2017/08/google-google-io-2017-for-android.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google 发布 Google I/O 2017 for Android 的源代码&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;今年的应用对现有功能做出了实质性的修改，同时增加了几项新功能。它还扩展了技术栈，以便可以利用 Firebase。本文重点介绍了对该应用的几个显著改变以及当时的设计考虑&lt;/p&gt;
+&lt;h5 id=&quot;4、Android-8-0-Oreo最终版发布，建议开发者加强应用测试&quot;&gt;&lt;a href=&quot;#4、Android-8-0-Oreo最终版发布，建议开发者加强应用测试&quot; class=&quot;headerlink&quot; title=&quot;4、Android 8.0 Oreo最终版发布，建议开发者加强应用测试&quot;&gt;&lt;/a&gt;4、&lt;a href=&quot;http://www.infoq.com/cn/news/2017/08/android-8-oreo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 8.0 Oreo最终版发布，建议开发者加强应用测试&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;Google 发布了 Android 8.0 Oreo 的最终版。源代码已经发布在了 AOSP 上，用于 Nexus 和 Pixel 的系统镜像也已可用。Android 8.0 带来的一些变更将影响到现有应用的功能。Android 8.0 带来了一些新特性，包括 PIP、与即时应用的集成、通知频道、自动填充（Autofill）、后台位置服务、为改进电池续航而添加的运行限制、Play Protect、经由 Google VPN 的开放WiFi连接、自适应图标，等等。&lt;/p&gt;
+&lt;h5 id=&quot;5、Ubuntu-17-10-“Artful-Aardvark”-首个-Beta-版发布&quot;&gt;&lt;a href=&quot;#5、Ubuntu-17-10-“Artful-Aardvark”-首个-Beta-版发布&quot; class=&quot;headerlink&quot; title=&quot;5、Ubuntu 17.10 “Artful Aardvark” 首个 Beta 版发布&quot;&gt;&lt;/a&gt;5、&lt;a href=&quot;https://www.oschina.net/news/88305/ubuntu-17-10-beta1-released&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Ubuntu 17.10 “Artful Aardvark” 首个 Beta 版发布&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;6、在系统安全方面，Android-8-0-做出了一些重要改变&quot;&gt;&lt;a href=&quot;#6、在系统安全方面，Android-8-0-做出了一些重要改变&quot; class=&quot;headerlink&quot; title=&quot;6、在系统安全方面，Android 8.0 做出了一些重要改变&quot;&gt;&lt;/a&gt;6、&lt;a href=&quot;http://www.ifanr.com/903926?utm_source=tuicool&amp;amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;在系统安全方面，Android 8.0 做出了一些重要改变&lt;/a&gt;&lt;/h5&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/tags/%E5%91%A8%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android开发者e周报 第4期</title>
+    <link href="http://blog.zimob.cc/2017/08/29/developer-weekly-4/"/>
+    <id>http://blog.zimob.cc/2017/08/29/developer-weekly-4/</id>
+    <published>2017-08-29T03:38:41.000Z</published>
+    <updated>2018-11-16T04:16:09.085Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android开发者e周报往期&quot;&gt;&lt;a href=&quot;#Android开发者e周报往期&quot; class=&quot;headerlink&quot; title=&quot;Android开发者e周报往期&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报往期&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/08/developer-weekly-1/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第1期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/15/developer-weekly-2/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第2期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/22/developer-weekly-3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第3期&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;News&quot;&gt;&lt;a href=&quot;#News&quot; class=&quot;headerlink&quot; title=&quot;News&quot;&gt;&lt;/a&gt;News&lt;/h2&gt;&lt;h5 id=&quot;1、安卓全球称霸，Google-Play服务安装量破50亿&quot;&gt;&lt;a href=&quot;#1、安卓全球称霸，Google-Play服务安装量破50亿&quot; class=&quot;headerlink&quot; title=&quot;1、安卓全球称霸，Google Play服务安装量破50亿&quot;&gt;&lt;/a&gt;1、&lt;a href=&quot;https://www.ithome.com/html/android/319021.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;安卓全球称霸，Google Play服务安装量破50亿&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;Google Play服务是谷歌在Android手机中预装的程序，几乎遍布每一台Android手机中（这其中除了中国销售手机之外），Google Play是通用安卓服务的基础。如果把Google Play看作是一款APP，将是首个安装量达到50亿的安卓应用。&lt;/p&gt;
+&lt;h5 id=&quot;2、Google-发布了-I-O-大会-App-的最新源代码&quot;&gt;&lt;a href=&quot;#2、Google-发布了-I-O-大会-App-的最新源代码&quot; class=&quot;headerlink&quot; title=&quot;2、Google 发布了 I/O 大会 App 的最新源代码&quot;&gt;&lt;/a&gt;2、&lt;a href=&quot;http://www.goofan.net/google-releases-source-for-google-io.html?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google 发布了 I/O 大会 App 的最新源代码&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;3、Developer-Preview-4现已发布，Android-O正式版也即将推出！&quot;&gt;&lt;a href=&quot;#3、Developer-Preview-4现已发布，Android-O正式版也即将推出！&quot; class=&quot;headerlink&quot; title=&quot;3、Developer Preview 4现已发布，Android O正式版也即将推出！&quot;&gt;&lt;/a&gt;3、&lt;a href=&quot;http://developers.googleblog.cn/2017/08/developer-preview-4android-o.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Developer Preview 4现已发布，Android O正式版也即将推出！&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;谷歌的Android移动系统从未停止前进的脚步，近日发布了Android O系统的第四个开发者预览版，这也是Android 8.0最终版上线之前的最后一个预览版。夏季官方结束日期为9月22日，因此推测Android O有望在此之前亮相发布。&lt;/p&gt;
+&lt;h5 id=&quot;4、Google发布2-0版“近场连接API”：改进带宽、延迟与离线功能&quot;&gt;&lt;a href=&quot;#4、Google发布2-0版“近场连接API”：改进带宽、延迟与离线功能&quot; class=&quot;headerlink&quot; title=&quot;4、Google发布2.0版“近场连接API”：改进带宽、延迟与离线功能&quot;&gt;&lt;/a&gt;4、&lt;a href=&quot;http://www.cnbeta.com/articles/soft/637507.htm?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google发布2.0版“近场连接API”：改进带宽、延迟与离线功能&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;关注过 I/O 2017 开发者大会的网友们，或许还记得 Google 提到过的“情境应用体验”（Contextual App Experiences）。这组 API 可用于两台物理接近的设备（比如手机和其它）之间的通讯，进一步拓展本地信息和数据分享的能力。不过这个复杂的名字，似乎影响到了大家对它的认识。有鉴于此，Google 决定将它重命名为“近场连接应用程序接口”（Nearby Connections API），并于今日发布了 2.0 版本&lt;/p&gt;
+&lt;h5 id=&quot;5、Google在Android-8-0-Oreo中引入了新的编译版本号格式&quot;&gt;&lt;a href=&quot;#5、Google在Android-8-0-Oreo中引入了新的编译版本号格式&quot; class=&quot;headerlink&quot; title=&quot;5、Google在Android 8.0 Oreo中引入了新的编译版本号格式&quot;&gt;&lt;/a&gt;5、&lt;a href=&quot;http://www.cnbeta.com/articles/soft/644995.htm?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google在Android 8.0 Oreo中引入了新的编译版本号格式&lt;/a&gt;&lt;/h5&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/tags/%E5%91%A8%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Android 开源系列】之数据库ORM框架</title>
+    <link href="http://blog.zimob.cc/2017/08/29/os-orm-fragment/"/>
+    <id>http://blog.zimob.cc/2017/08/29/os-orm-fragment/</id>
+    <published>2017-08-29T03:23:07.000Z</published>
+    <updated>2018-11-16T04:16:09.089Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android-开源系列&quot;&gt;&lt;a href=&quot;#Android-开源系列&quot; class=&quot;headerlink&quot; title=&quot;Android 开源系列&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 开源系列&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/17/android-cache-fragment/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之缓存框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/18/os_network_fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之网络请求框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/18/os_img_fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之图片加载框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/21/os-video-fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之视频处理框架&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;GreenDAO-Star-8476&quot;&gt;&lt;a href=&quot;#GreenDAO-Star-8476&quot; class=&quot;headerlink&quot; title=&quot;GreenDAO - Star 8476&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/greenrobot/greenDAO&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GreenDAO&lt;/a&gt; - Star 8476&lt;/h4&gt;&lt;p&gt;GreenDAO是一个轻量级，快速的orm框架。简化建表、查询、更新、插入、事务、索引的操作&lt;br&gt;&lt;strong&gt;特性:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;性能突出(比ormlite快4-5倍), performance&lt;/li&gt;
+&lt;li&gt;库小，核心包小于100k&lt;/li&gt;
+&lt;li&gt;简单易用的API&lt;/li&gt;
+&lt;li&gt;支持protobuf&lt;/li&gt;
+&lt;li&gt;自动生成数据库访问代码&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="开源系列" scheme="http://blog.zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="开源" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90/"/>
+    
+      <category term="Java" scheme="http://blog.zimob.cc/tags/Java/"/>
+    
+      <category term="开源系列" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/"/>
+    
+      <category term="ORM" scheme="http://blog.zimob.cc/tags/ORM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android开发者e周报 第3期</title>
+    <link href="http://blog.zimob.cc/2017/08/22/developer-weekly-3/"/>
+    <id>http://blog.zimob.cc/2017/08/22/developer-weekly-3/</id>
+    <published>2017-08-22T01:24:29.000Z</published>
+    <updated>2018-11-16T04:16:09.084Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android开发者e周报往期&quot;&gt;&lt;a href=&quot;#Android开发者e周报往期&quot; class=&quot;headerlink&quot; title=&quot;Android开发者e周报往期&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报往期&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/08/developer-weekly-1/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第1期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/15/developer-weekly-2/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第2期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/29/developer-weekly-4/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第4期&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;News&quot;&gt;&lt;a href=&quot;#News&quot; class=&quot;headerlink&quot; title=&quot;News&quot;&gt;&lt;/a&gt;News&lt;/h2&gt;&lt;h5 id=&quot;1、Google-以日食来倒计时-Android-O-的发布&quot;&gt;&lt;a href=&quot;#1、Google-以日食来倒计时-Android-O-的发布&quot; class=&quot;headerlink&quot; title=&quot;1、Google 以日食来倒计时 Android O 的发布&quot;&gt;&lt;/a&gt;1、&lt;a href=&quot;http://www.goofan.net/google-is-counting-on-eclipses-to-mark-the-release-of-android.html?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google 以日食来倒计时 Android O 的发布&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;2、Google-宣布推出Nearby-Connections-2-0&quot;&gt;&lt;a href=&quot;#2、Google-宣布推出Nearby-Connections-2-0&quot; class=&quot;headerlink&quot; title=&quot;2、Google 宣布推出Nearby Connections 2.0&quot;&gt;&lt;/a&gt;2、&lt;a href=&quot;http://mp.weixin.qq.com/s/hSIGk66fmcH-EajeghIcRQ?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google 宣布推出Nearby Connections 2.0&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;3、Android-Wear-2-0-连接未来&quot;&gt;&lt;a href=&quot;#3、Android-Wear-2-0-连接未来&quot; class=&quot;headerlink&quot; title=&quot;3、Android Wear 2.0 - 连接未来&quot;&gt;&lt;/a&gt;3、&lt;a href=&quot;http://mp.weixin.qq.com/s/7_Lss7nn8K0GacOWch599Q?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android Wear 2.0 - 连接未来&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;4、Android-Things-发布第-5-个预览版&quot;&gt;&lt;a href=&quot;#4、Android-Things-发布第-5-个预览版&quot; class=&quot;headerlink&quot; title=&quot;4、Android Things 发布第 5 个预览版&quot;&gt;&lt;/a&gt;4、&lt;a href=&quot;http://www.goofan.net/android-things-developer-preview-5.html?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android Things 发布第 5 个预览版&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;5、快来体验一下新一代-Dex-编译器吧&quot;&gt;&lt;a href=&quot;#5、快来体验一下新一代-Dex-编译器吧&quot; class=&quot;headerlink&quot; title=&quot;5、快来体验一下新一代 Dex 编译器吧&quot;&gt;&lt;/a&gt;5、&lt;a href=&quot;http://www.goofan.net/next-generation-dex-compiler-now-in.html?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;快来体验一下新一代 Dex 编译器吧&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;6、Android-大神-Jake-Wharton-宣布入职-Google&quot;&gt;&lt;a href=&quot;#6、Android-大神-Jake-Wharton-宣布入职-Google&quot; class=&quot;headerlink&quot; title=&quot;6、Android 大神 Jake Wharton 宣布入职 Google&quot;&gt;&lt;/a&gt;6、&lt;a href=&quot;http://www.oschina.net/news/87541/jake-wharton-join-in-google&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 大神 Jake Wharton 宣布入职 Google&lt;/a&gt;&lt;/h5&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/tags/%E5%91%A8%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Android 开源系列】之视频处理框架</title>
+    <link href="http://blog.zimob.cc/2017/08/21/os-video-fragment/"/>
+    <id>http://blog.zimob.cc/2017/08/21/os-video-fragment/</id>
+    <published>2017-08-21T09:00:17.000Z</published>
+    <updated>2018-11-16T04:16:09.089Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android-开源系列&quot;&gt;&lt;a href=&quot;#Android-开源系列&quot; class=&quot;headerlink&quot; title=&quot;Android 开源系列&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 开源系列&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/17/android-cache-fragment/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之缓存框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/18/os_network_fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之网络请求框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/18/os_img_fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之图片加载框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/29/os-orm-fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之数据库ORM框架&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;ijkplayer-Bilibili-Star-14853&quot;&gt;&lt;a href=&quot;#ijkplayer-Bilibili-Star-14853&quot; class=&quot;headerlink&quot; title=&quot;ijkplayer - Bilibili - Star 14853&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/Bilibili/ijkplayer&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ijkplayer - Bilibili&lt;/a&gt; - Star 14853&lt;/h4&gt;&lt;p&gt;Android / iOS视频播放器基于FFmpeg n3.2，支持MediaCodec，VideoToolbox&lt;/p&gt;
+&lt;h4 id=&quot;FFmpeg-Star-8025&quot;&gt;&lt;a href=&quot;#FFmpeg-Star-8025&quot; class=&quot;headerlink&quot; title=&quot;FFmpeg - Star 8025&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/FFmpeg/FFmpeg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FFmpeg&lt;/a&gt; - Star 8025&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://ffmpeg.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FFmpeg&lt;/a&gt;有非常强大的功能包括视频采集功能、视频格式转换、视频抓图、给视频加水印等。&lt;/p&gt;
+&lt;h4 id=&quot;Vitamio-Star-4237&quot;&gt;&lt;a href=&quot;#Vitamio-Star-4237&quot; class=&quot;headerlink&quot; title=&quot;Vitamio - Star 4237&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/yixia/VitamioBundle&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Vitamio&lt;/a&gt; - Star 4237&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://www.vitamio.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Vitamio&lt;/a&gt;是一款Android 与iOS 平台上的全能多媒体开发框架&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="开源系列" scheme="http://blog.zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="Java" scheme="http://blog.zimob.cc/tags/Java/"/>
+    
+      <category term="视频处理" scheme="http://blog.zimob.cc/tags/%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
+    
+      <category term="ExoPlayer" scheme="http://blog.zimob.cc/tags/ExoPlayer/"/>
+    
+      <category term="ijkplayer" scheme="http://blog.zimob.cc/tags/ijkplayer/"/>
+    
+      <category term="Bilibili" scheme="http://blog.zimob.cc/tags/Bilibili/"/>
+    
+      <category term="FFmpeg" scheme="http://blog.zimob.cc/tags/FFmpeg/"/>
+    
+      <category term="Vitamio" scheme="http://blog.zimob.cc/tags/Vitamio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Android 开源系列】之网络请求框架</title>
+    <link href="http://blog.zimob.cc/2017/08/18/os-network-fragment/"/>
+    <id>http://blog.zimob.cc/2017/08/18/os-network-fragment/</id>
+    <published>2017-08-18T02:23:13.000Z</published>
+    <updated>2018-11-16T04:16:09.088Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android-开源系列&quot;&gt;&lt;a href=&quot;#Android-开源系列&quot; class=&quot;headerlink&quot; title=&quot;Android 开源系列&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 开源系列&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/17/android-cache-fragment/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之缓存框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/18/os_img_fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之图片加载框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/21/os-video-fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之视频处理框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/29/os-orm-fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之数据库ORM框架&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;Retrofit-Star-23251&quot;&gt;&lt;a href=&quot;#Retrofit-Star-23251&quot; class=&quot;headerlink&quot; title=&quot;Retrofit - Star 23251&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/square/retrofit&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Retrofit&lt;/a&gt; - Star 23251&lt;/h4&gt;&lt;p&gt;Square开源的Android和Java的REST风格请求库.&lt;/p&gt;
+&lt;h4 id=&quot;OkHttp-Star-21822&quot;&gt;&lt;a href=&quot;#OkHttp-Star-21822&quot; class=&quot;headerlink&quot; title=&quot;OkHttp - Star 21822&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/square/okhttp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OkHttp&lt;/a&gt; - Star 21822&lt;/h4&gt;&lt;p&gt;一个Http与Http/2的客户端&lt;br&gt;&lt;strong&gt;特性:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持HTTP2和SPDY&lt;/li&gt;
+&lt;li&gt;如果SPDY不可用，利用连接池减少请求延迟&lt;/li&gt;
+&lt;li&gt;使用GZIP压缩&lt;/li&gt;
+&lt;li&gt;Response缓存减少不必要的请求&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="开源系列" scheme="http://blog.zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="JakeWharton" scheme="http://blog.zimob.cc/tags/JakeWharton/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="开源" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90/"/>
+    
+      <category term="Java" scheme="http://blog.zimob.cc/tags/Java/"/>
+    
+      <category term="网络框架" scheme="http://blog.zimob.cc/tags/%E7%BD%91%E7%BB%9C%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Retrofit" scheme="http://blog.zimob.cc/tags/Retrofit/"/>
+    
+      <category term="OkHttp" scheme="http://blog.zimob.cc/tags/OkHttp/"/>
+    
+      <category term="Volley" scheme="http://blog.zimob.cc/tags/Volley/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Android 开源系列】之图片加载框架</title>
+    <link href="http://blog.zimob.cc/2017/08/18/os-img-fragment/"/>
+    <id>http://blog.zimob.cc/2017/08/18/os-img-fragment/</id>
+    <published>2017-08-18T01:33:22.000Z</published>
+    <updated>2018-11-16T04:16:09.088Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android-开源系列&quot;&gt;&lt;a href=&quot;#Android-开源系列&quot; class=&quot;headerlink&quot; title=&quot;Android 开源系列&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 开源系列&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/17/android-cache-fragment/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之缓存框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/18/os_network_fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之网络请求框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/21/os-video-fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之视频处理框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/29/os-orm-fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之数据库ORM框架&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;Glide-Star-17250&quot;&gt;&lt;a href=&quot;#Glide-Star-17250&quot; class=&quot;headerlink&quot; title=&quot;Glide - Star 17250&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/bumptech/glide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Glide&lt;/a&gt; - Star 17250&lt;/h4&gt;&lt;p&gt;一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合&lt;br&gt;&lt;strong&gt;特性:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GIF动画的解码&lt;/li&gt;
+&lt;li&gt;本地视频剧照的解码&lt;/li&gt;
+&lt;li&gt;Activity生命周期的集成&lt;/li&gt;
+&lt;li&gt;转码的支持&lt;/li&gt;
+&lt;li&gt;动画的支持&lt;/li&gt;
+&lt;li&gt;OkHttp和Volley的支持&lt;/li&gt;
+&lt;li&gt;其他功能：图片加载过程中占位符等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Android-Universal-Image-Loader-Star-15565&quot;&gt;&lt;a href=&quot;#Android-Universal-Image-Loader-Star-15565&quot; class=&quot;headerlink&quot; title=&quot;Android Universal Image Loader - Star 15565&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/nostra13/Android-Universal-Image-Loader&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android Universal Image Loader&lt;/a&gt; - Star 15565&lt;/h4&gt;&lt;p&gt;应该是使用最多的图片缓存，支持主流图片缓存的绝大多数特性&lt;br&gt;&lt;strong&gt;特性:&lt;/strong&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="开源系列" scheme="http://blog.zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="JakeWharton" scheme="http://blog.zimob.cc/tags/JakeWharton/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="开源" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90/"/>
+    
+      <category term="Java" scheme="http://blog.zimob.cc/tags/Java/"/>
+    
+      <category term="图片加载框架" scheme="http://blog.zimob.cc/tags/%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Glide" scheme="http://blog.zimob.cc/tags/Glide/"/>
+    
+      <category term="Picasso" scheme="http://blog.zimob.cc/tags/Picasso/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Android 开源系列】之缓存框架</title>
+    <link href="http://blog.zimob.cc/2017/08/17/android-cache-fragment/"/>
+    <id>http://blog.zimob.cc/2017/08/17/android-cache-fragment/</id>
+    <published>2017-08-17T03:48:33.000Z</published>
+    <updated>2018-11-16T04:16:09.080Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android-开源系列&quot;&gt;&lt;a href=&quot;#Android-开源系列&quot; class=&quot;headerlink&quot; title=&quot;Android 开源系列&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 开源系列&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/18/os_network_fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之网络请求框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/18/os_img_fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之图片加载框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/21/os-video-fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之视频处理框架&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/29/os-orm-fragment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【Android 开源系列】之数据库ORM框架&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;DiskLruCache-Star-3800&quot;&gt;&lt;a href=&quot;#DiskLruCache-Star-3800&quot; class=&quot;headerlink&quot; title=&quot;DiskLruCache - Star 3800&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/JakeWharton/DiskLruCache&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DiskLruCache&lt;/a&gt; - Star 3800&lt;/h4&gt;&lt;p&gt;DiskLruCache 是Java实现基于LRU的磁盘缓存.由JakeWharton大神创建维护&lt;/p&gt;
+&lt;h4 id=&quot;ASimpleCache-Star-2550&quot;&gt;&lt;a href=&quot;#ASimpleCache-Star-2550&quot; class=&quot;headerlink&quot; title=&quot;ASimpleCache - Star 2550&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/yangfuhai/ASimpleCache&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ASimpleCache&lt;/a&gt; - Star 2550&lt;/h4&gt;&lt;p&gt;ASimpleCache 是一个为android制定的 轻量级的 开源缓存框架。轻量到只有一个java文件（由十几个类精简而来）。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="开源系列" scheme="http://blog.zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="JakeWharton" scheme="http://blog.zimob.cc/tags/JakeWharton/"/>
+    
+      <category term="缓存框架" scheme="http://blog.zimob.cc/tags/%E7%BC%93%E5%AD%98%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="开源" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90/"/>
+    
+      <category term="DiskLruCache" scheme="http://blog.zimob.cc/tags/DiskLruCache/"/>
+    
+      <category term="ASimpleCache" scheme="http://blog.zimob.cc/tags/ASimpleCache/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【人性的弱点】割不完的韭菜</title>
+    <link href="http://blog.zimob.cc/2017/08/16/kill-wealth-leek/"/>
+    <id>http://blog.zimob.cc/2017/08/16/kill-wealth-leek/</id>
+    <published>2017-08-16T03:47:43.000Z</published>
+    <updated>2018-11-16T04:16:09.087Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在国内，和不同创业者聊天，特别感慨一个现状，按理说，创业应该是为用户创造价值，然后通过某种方式将这个价值的一部分变现出来，获取财富。但现实是，割韭菜更容易，来钱更快。&lt;/p&gt;
+&lt;p&gt;那么，我们说搜索引擎，说即时通讯，说电子商务，实话说，这些是为用户创造价值的，没有搜索引擎会怎样，没有即时通讯会怎样，没有电子商务会怎样，我们想想看。当然，这些平台上也有一些衍生产品在割韭菜， 也有一些坏的东西寄生在这种平台上面，这是事实，但从平台本身之所以成立的逻辑来说，实际上是为用户创造价值的。（提醒，此处有洗白万恶百度的嫌疑！）&lt;/p&gt;
+&lt;p&gt;但现在，各种什么奇怪的交易市场、什么炒汇专家群、什么美女股神、什么各种名义的ICO、什么裂变销售模式，基本上就是纯粹割韭菜了。&lt;/p&gt;
+&lt;p&gt;那么，割韭菜的几大领域，简单整理一下。&lt;/p&gt;
+&lt;h4 id=&quot;1、贪便宜&quot;&gt;&lt;a href=&quot;#1、贪便宜&quot; class=&quot;headerlink&quot; title=&quot;1、贪便宜&quot;&gt;&lt;/a&gt;1、贪便宜&lt;/h4&gt;&lt;p&gt;就是你能用很便宜的价钱，有机会获得看上去很昂贵的东西。&lt;/p&gt;
+&lt;p&gt;典型的，一元夺宝。&lt;/p&gt;
+&lt;p&gt;再典型的，各种广告上，所谓新品牌为了开拓市场，大降价促销广告，有一个算一个，基本都是一波流，扫完这一批就没了，什么品牌拓展、亏本促销，赚的嗷嗷的。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="人生感悟" scheme="http://blog.zimob.cc/categories/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="人性的弱点" scheme="http://blog.zimob.cc/tags/%E4%BA%BA%E6%80%A7%E7%9A%84%E5%BC%B1%E7%82%B9/"/>
+    
+      <category term="财富" scheme="http://blog.zimob.cc/tags/%E8%B4%A2%E5%AF%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【置顶】Android开源网站一网打尽</title>
+    <link href="http://blog.zimob.cc/2017/08/16/open-sources-sites/"/>
+    <id>http://blog.zimob.cc/2017/08/16/open-sources-sites/</id>
+    <published>2017-08-16T01:48:35.000Z</published>
+    <updated>2018-11-16T04:16:09.087Z</updated>
+    
+    <summary type="html">
+    
+      &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;网站&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国外&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.codota.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Codota&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国外&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://android-arsenal.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android Arsenal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国外&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://github.com/googlesamples&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GoogleSamples&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;http://square.github.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Square&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android-Open-Project&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://github.com/snowdream/awesome-android&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Awesome-Android&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://alamkanak.github.io/android-libraries-and-resources/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android Libraries and Resources&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.open-open.com/code/?sort=active&amp;amp;lang=0&amp;amp;catalog=8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;深度开源&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国内&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.oschina.net/project/tag/342/android-ui&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;开源中国&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国内&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;http://p.codekk.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Codekk&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国内&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.jcodecraeer.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;泡在网上的日子&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国内&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.opendigg.com/tags/android&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OpenDigg&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国内&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.23code.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;23Code&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;国内&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="开源" scheme="http://blog.zimob.cc/categories/Android/%E5%BC%80%E6%BA%90/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="开源" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90/"/>
+    
+      <category term="Java" scheme="http://blog.zimob.cc/tags/Java/"/>
+    
+      <category term="开源网站" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E7%BD%91%E7%AB%99/"/>
+    
+      <category term="GitHub" scheme="http://blog.zimob.cc/tags/GitHub/"/>
+    
+      <category term="Git" scheme="http://blog.zimob.cc/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android开发者e周报 第2期</title>
+    <link href="http://blog.zimob.cc/2017/08/15/developer-weekly-2/"/>
+    <id>http://blog.zimob.cc/2017/08/15/developer-weekly-2/</id>
+    <published>2017-08-15T03:23:45.000Z</published>
+    <updated>2018-11-16T04:16:09.084Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android开发者e周报往期&quot;&gt;&lt;a href=&quot;#Android开发者e周报往期&quot; class=&quot;headerlink&quot; title=&quot;Android开发者e周报往期&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报往期&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://zimob.cc/2017/08/08/developer-weekly-1/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第1期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/22/developer-weekly-3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第3期&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zimob.cc/2017/08/29/developer-weekly-4/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android开发者e周报 第4期&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;News&quot;&gt;&lt;a href=&quot;#News&quot; class=&quot;headerlink&quot; title=&quot;News&quot;&gt;&lt;/a&gt;News&lt;/h2&gt;&lt;h5 id=&quot;1、万众瞩目Instant-Apps终于全面问世啦&quot;&gt;&lt;a href=&quot;#1、万众瞩目Instant-Apps终于全面问世啦&quot; class=&quot;headerlink&quot; title=&quot;1、万众瞩目Instant Apps终于全面问世啦&quot;&gt;&lt;/a&gt;1、&lt;a href=&quot;http://mp.weixin.qq.com/s/L7fYdc742v2KC3AHMapEFQ?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;万众瞩目Instant Apps终于全面问世啦&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;2、2017年2季度：Android智能机在美份额持续领先iOS&quot;&gt;&lt;a href=&quot;#2、2017年2季度：Android智能机在美份额持续领先iOS&quot; class=&quot;headerlink&quot; title=&quot;2、2017年2季度：Android智能机在美份额持续领先iOS&quot;&gt;&lt;/a&gt;2、&lt;a href=&quot;http://www.cnbeta.com/articles/tech/633575.htm?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2017年2季度：Android智能机在美份额持续领先iOS&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;3、Android-测试支持库-1-0-版本来喽！&quot;&gt;&lt;a href=&quot;#3、Android-测试支持库-1-0-版本来喽！&quot; class=&quot;headerlink&quot; title=&quot;3、Android 测试支持库 1.0 版本来喽！&quot;&gt;&lt;/a&gt;3、&lt;a href=&quot;http://www.goofan.net/android-testing-support-library-10-is-here.html?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android 测试支持库 1.0 版本来喽！&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;4、谷歌Pixel-2-将首发高通骁龙836芯片-小米一加随后跟进&quot;&gt;&lt;a href=&quot;#4、谷歌Pixel-2-将首发高通骁龙836芯片-小米一加随后跟进&quot; class=&quot;headerlink&quot; title=&quot;4、谷歌Pixel 2 将首发高通骁龙836芯片 小米一加随后跟进&quot;&gt;&lt;/a&gt;4、&lt;a href=&quot;http://www.cnbeta.com/articles/tech/634847.htm?utm_source=androidweekly.cn&amp;amp;utm_medium=website&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;谷歌Pixel 2 将首发高通骁龙836芯片 小米一加随后跟进&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;5、Kotlin-1-2-里程碑版本正式发布，编译器和标准库日趋稳定&quot;&gt;&lt;a href=&quot;#5、Kotlin-1-2-里程碑版本正式发布，编译器和标准库日趋稳定&quot; class=&quot;headerlink&quot; title=&quot;5、Kotlin 1.2 里程碑版本正式发布，编译器和标准库日趋稳定&quot;&gt;&lt;/a&gt;5、&lt;a href=&quot;http://geek.csdn.net/news/detail/231268&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kotlin 1.2 里程碑版本正式发布，编译器和标准库日趋稳定&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;6、2017年如何成为全栈工程师，这些技能是你必须具备的！&quot;&gt;&lt;a href=&quot;#6、2017年如何成为全栈工程师，这些技能是你必须具备的！&quot; class=&quot;headerlink&quot; title=&quot;6、2017年如何成为全栈工程师，这些技能是你必须具备的！&quot;&gt;&lt;/a&gt;6、&lt;a href=&quot;http://geek.csdn.net/news/detail/231275&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2017年如何成为全栈工程师，这些技能是你必须具备的！&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;7、自然语言处理的十个发展趋势&quot;&gt;&lt;a href=&quot;#7、自然语言处理的十个发展趋势&quot; class=&quot;headerlink&quot; title=&quot;7、自然语言处理的十个发展趋势&quot;&gt;&lt;/a&gt;7、&lt;a href=&quot;http://geek.csdn.net/news/detail/230743&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;自然语言处理的十个发展趋势&lt;/a&gt;&lt;/h5&gt;&lt;h2 id=&quot;Course&quot;&gt;&lt;a href=&quot;#Course&quot; class=&quot;headerlink&quot; title=&quot;Course&quot;&gt;&lt;/a&gt;Course&lt;/h2&gt;&lt;h5 id=&quot;1、精选100篇干货&quot;&gt;&lt;a href=&quot;#1、精选100篇干货&quot; class=&quot;headerlink&quot; title=&quot;1、精选100篇干货&quot;&gt;&lt;/a&gt;1、&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzIwMzYwMTk1NA==&amp;amp;mid=2247486370&amp;amp;idx=1&amp;amp;sn=1d922d8f375cdcec20bd31cbc2f0e418&amp;amp;chksm=96cdaaefa1ba23f90bc4975fa9dc22a30f7b5c343b3a0924bfcabe11df96e5955ccb08191ecf#rd&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;精选100篇干货&lt;/a&gt;&lt;/h5&gt;&lt;h5 id=&quot;2、RxLifeCycle机制介绍&quot;&gt;&lt;a href=&quot;#2、RxLifeCycle机制介绍&quot; class=&quot;headerlink&quot; title=&quot;2、RxLifeCycle机制介绍&quot;&gt;&lt;/a&gt;2、&lt;a href=&quot;http://url.cn/4Es2B0l&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RxLifeCycle机制介绍&lt;/a&gt;&lt;/h5&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="开源项目" scheme="http://blog.zimob.cc/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="周报" scheme="http://blog.zimob.cc/tags/%E5%91%A8%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android在应用内启动另一个应用程序apk的两种方式</title>
+    <link href="http://blog.zimob.cc/2017/08/11/apk-start-other-apk/"/>
+    <id>http://blog.zimob.cc/2017/08/11/apk-start-other-apk/</id>
+    <published>2017-08-11T09:32:50.000Z</published>
+    <updated>2018-11-16T04:16:09.082Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Android开发有时需要在一个应用中启动另一个应用，比如Launcher加载所有的已安装的程序的列表，当点击图标时可以启动另一个应用。 &lt;/p&gt;
+&lt;h3 id=&quot;知道了另一个应用的包名和Launcher-Activity的名字之后可以直接通过如下代码来启动：&quot;&gt;&lt;a href=&quot;#知道了另一个应用的包名和Launcher-Activity的名字之后可以直接通过如下代码来启动：&quot; class=&quot;headerlink&quot; title=&quot;知道了另一个应用的包名和Launcher Activity的名字之后可以直接通过如下代码来启动：&quot;&gt;&lt;/a&gt;知道了另一个应用的包名和Launcher Activity的名字之后可以直接通过如下代码来启动：&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Intent intent = new Intent(Intent.ACTION_MAIN);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;intent.addCategory(Intent.CATEGORY_LAUNCHER);           &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ComponentName cn = new ComponentName(packageName, className);           &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;intent.setComponent(cn);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;startActivity(intent);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;只知道包名时，我们可以通过ResolveInfo类来取得启动Acitivty的类名：&quot;&gt;&lt;a href=&quot;#只知道包名时，我们可以通过ResolveInfo类来取得启动Acitivty的类名：&quot; class=&quot;headerlink&quot; title=&quot;只知道包名时，我们可以通过ResolveInfo类来取得启动Acitivty的类名：&quot;&gt;&lt;/a&gt;只知道包名时，我们可以通过ResolveInfo类来取得启动Acitivty的类名：&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="Activity" scheme="http://blog.zimob.cc/tags/Activity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【黑科技】钉钉自动打卡</title>
+    <link href="http://blog.zimob.cc/2017/08/11/black-tech-dingding/"/>
+    <id>http://blog.zimob.cc/2017/08/11/black-tech-dingding/</id>
+    <published>2017-08-11T07:24:54.000Z</published>
+    <updated>2018-11-16T04:16:09.082Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;所需环境：&lt;br&gt;1、JDK&lt;br&gt;2、Android SDK&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+      <category term="黑科技" scheme="http://blog.zimob.cc/categories/Android/%E9%BB%91%E7%A7%91%E6%8A%80/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="adb" scheme="http://blog.zimob.cc/tags/adb/"/>
+    
+      <category term="黑科技" scheme="http://blog.zimob.cc/tags/%E9%BB%91%E7%A7%91%E6%8A%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android adb 使用学习【持续更新...】</title>
+    <link href="http://blog.zimob.cc/2017/08/11/adb-studing/"/>
+    <id>http://blog.zimob.cc/2017/08/11/adb-studing/</id>
+    <published>2017-08-11T06:56:22.000Z</published>
+    <updated>2018-11-16T04:16:09.080Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;adb启动-应用程序&quot;&gt;&lt;a href=&quot;#adb启动-应用程序&quot; class=&quot;headerlink&quot; title=&quot;adb启动 应用程序&quot;&gt;&lt;/a&gt;adb启动 应用程序&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;adb shell am start -n 包名/Activity类的类名&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;如：钉钉&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;adb shell am start -n com.alibaba.android.rimet/com.alibaba.android.rimet.biz.SplashActivity&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;adb停止应用程序&quot;&gt;&lt;a href=&quot;#adb停止应用程序&quot; class=&quot;headerlink&quot; title=&quot;adb停止应用程序&quot;&gt;&lt;/a&gt;adb停止应用程序&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;adb shell am force-stop  包名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;获取当前activity名称&quot;&gt;&lt;a href=&quot;#获取当前activity名称&quot; class=&quot;headerlink&quot; title=&quot;获取当前activity名称&quot;&gt;&lt;/a&gt;获取当前activity名称&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;adb shell dumpsys activity | findstr &lt;span class=&quot;string&quot;&gt;&quot;mF&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="adb" scheme="http://blog.zimob.cc/tags/adb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android JNI调用注意事项</title>
+    <link href="http://blog.zimob.cc/2017/08/11/use-so-method-attention/"/>
+    <id>http://blog.zimob.cc/2017/08/11/use-so-method-attention/</id>
+    <published>2017-08-11T02:57:14.000Z</published>
+    <updated>2018-11-16T04:16:09.089Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在实际调用so中方法时，正确的调用方式是这样的：&lt;/p&gt;
+&lt;p&gt;如：libjary.so中有一个方法名为&lt;font color=&quot;red&quot; size=&quot;5&quot;&gt;Java_xwc_com_ndkdemo_JniTest_getString&lt;/font&gt;(JNIEnv *env,
+      
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="NDK" scheme="http://blog.zimob.cc/tags/NDK/"/>
+    
+      <category term="JNI" scheme="http://blog.zimob.cc/tags/JNI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【转载】Android Studio 2.2 NDK cMake 方式</title>
+    <link href="http://blog.zimob.cc/2017/08/10/android-studio-jni-cmake/"/>
+    <id>http://blog.zimob.cc/2017/08/10/android-studio-jni-cmake/</id>
+    <published>2017-08-10T11:33:13.000Z</published>
+    <updated>2018-11-16T04:16:09.081Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Android-Studio-2-2-NDK-cMake-方式&quot;&gt;&lt;a href=&quot;#Android-Studio-2-2-NDK-cMake-方式&quot; class=&quot;headerlink&quot; title=&quot;Android Studio 2.2 NDK cMake 方
+      
+    
+    </summary>
+    
+      <category term="Android" scheme="http://blog.zimob.cc/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://blog.zimob.cc/tags/Android/"/>
+    
+      <category term="NDK" scheme="http://blog.zimob.cc/tags/NDK/"/>
+    
+      <category term="JNI" scheme="http://blog.zimob.cc/tags/JNI/"/>
+    
+  </entry>
+  
+</feed>

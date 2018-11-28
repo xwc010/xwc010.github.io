@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="QLelsoavBq">
+    <meta name="baidu_union_verify" content="a196fa7bc04fb2b9c923972cfdc4db64">
+    
+    <!-- google广告网站验证 -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3265299695901949",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WGTG33V');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    
+    
+    <title>Android开发者e周报 第6期 | 亘古永蓝</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Android开发者e周报往期Android开发者e周报 第3期Android开发者e周报 第4期Android开发者e周报 第5期 新闻1、Android 8.1将抛弃3.5mm插孔2、在系统安全方面，Android 8.0 做出了一些重要改变3、XDA开发论坛已提供34款手机Android 8.0 ROM下载">
+<meta name="keywords" content="Android,开源项目,周报">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android开发者e周报 第6期">
+<meta property="og:url" content="http://blog.zimob.cc/2017/09/12/developer-weekly-6/index.html">
+<meta property="og:site_name" content="亘古永蓝">
+<meta property="og:description" content="Android开发者e周报往期Android开发者e周报 第3期Android开发者e周报 第4期Android开发者e周报 第5期 新闻1、Android 8.1将抛弃3.5mm插孔2、在系统安全方面，Android 8.0 做出了一些重要改变3、XDA开发论坛已提供34款手机Android 8.0 ROM下载">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-16T04:16:09.086Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android开发者e周报 第6期">
+<meta name="twitter:description" content="Android开发者e周报往期Android开发者e周报 第3期Android开发者e周报 第4期Android开发者e周报 第5期 新闻1、Android 8.1将抛弃3.5mm插孔2、在系统安全方面，Android 8.0 做出了一些重要改变3、XDA开发论坛已提供34款手机Android 8.0 ROM下载">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="亘古永蓝" type="application/atom+xml">
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-104645052-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+        <meta name="google-site-verification" content="GTM-WGTG33V">
+    
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?021f591f9348c5abc69731eb64f254d5";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    
+
+
+</head>
+</html>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGTG33V"
+            height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">亘古永蓝</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/sites">酷站导航</a>
+                
+                    <a class="main-nav-link" href="/archives">存档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/contributions">投稿</a>
+                
+                    <a class="main-nav-link" href="/learn">学习方法</a>
+                
+                    <a class="main-nav-link" href="/welfares">人人公益</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索">
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:blog.zimob.cc ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+<!-- <script type="text/javascript">
+	(function(){
+		document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+		var bdcs = document.createElement('script');
+		bdcs.type = 'text/javascript';
+		bdcs.async = true;
+		bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=12692636141773082327' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(bdcs, s);
+	})();
+</script> -->
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/sites">酷站导航</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">存档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/contributions">投稿</a></td>
+                
+                    <td><a class="main-nav-link" href="/learn">学习方法</a></td>
+                
+                    <td><a class="main-nav-link" href="/welfares">人人公益</a></td>
+                
+                <td>
+                    
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索">
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:blog.zimob.cc ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+<!-- <script type="text/javascript">
+	(function(){
+		document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+		var bdcs = document.createElement('script');
+		bdcs.type = 'text/javascript';
+		bdcs.async = true;
+		bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=12692636141773082327' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(bdcs, s);
+	})();
+</script> -->
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png">
+            <h2 id="name">子 墨</h2>
+            <h3 id="title">胸怀山与海，向往一缕阳光</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>ShenZhen, China</span>
+            <!-- <a id="follow" target="_blank" href="https://github.com/xwc010/">关注我</a> -->
+            <a id="follow" target="_blank" href="https://github.com/xwc010/">Follow</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                23
+                <span>文章</span>
+                <!-- <span>POSTS</span> -->
+            </div>
+            <div class="article-info-block">
+                39
+                <span>标签</span>
+                
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/xwc010" target="_blank" title="github" class="tooltip">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://weibo.com/deizs" target="_blank" title="weibo" class="tooltip">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.facebook.com/profile.php?id=100009675581054" target="_blank" title="facebook" class="tooltip">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://www.linkedin.com/in/xwc010" target="_blank" title="linkedin" class="tooltip">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/atom.xml" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+
+        
+    </div>
+
+    <div class="inner profile-inner">
+		
+        <div class="app-info profile-block">
+        	<a href="http://shouji.360tpcdn.com/150918/e6e002ccc9d6555b7c12a3f93a88b12a/com.tad.ifavorite.ui_15.apk">
+            <img id="qrcode" src="/css/images/qrcode.png">
+            </a>
+            <a id="name" target="_blank" href="http://shouji.360tpcdn.com/150918/e6e002ccc9d6555b7c12a3f93a88b12a/com.tad.ifavorite.ui_15.apk">iFavorite美图社区</a>
+        </div>
+        
+    </div>
+</aside>
+
+
+            
+            <section id="main"><article id="post-developer-weekly-6" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Android开发者e周报 第6期
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/09/12/developer-weekly-6/">
+            <time datetime="2017-09-12T07:38:41.000Z" itemprop="datePublished">2017-09-12</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Android/">Android</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Android/周报/">周报</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Android/">Android</a>, <a class="tag-link" href="/tags/周报/">周报</a>, <a class="tag-link" href="/tags/开源项目/">开源项目</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="Android开发者e周报往期"><a href="#Android开发者e周报往期" class="headerlink" title="Android开发者e周报往期"></a><a href="http://zimob.cc/categories/Android/%E5%91%A8%E6%8A%A5/" target="_blank" rel="noopener">Android开发者e周报往期</a></h3><p><a href="http://zimob.cc/2017/08/22/developer-weekly-3/" target="_blank" rel="noopener">Android开发者e周报 第3期</a><br><a href="http://zimob.cc/2017/08/29/developer-weekly-4/" target="_blank" rel="noopener">Android开发者e周报 第4期</a><br><a href="http://zimob.cc/2017/09/05/developer-weekly-5/" target="_blank" rel="noopener">Android开发者e周报 第5期</a></p>
+<h2 id="新闻"><a href="#新闻" class="headerlink" title="新闻"></a>新闻</h2><h5 id="1、Android-8-1将抛弃3-5mm插孔"><a href="#1、Android-8-1将抛弃3-5mm插孔" class="headerlink" title="1、Android 8.1将抛弃3.5mm插孔"></a>1、<a href="http://www.cnbeta.com/articles/tech/649287.htm?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">Android 8.1将抛弃3.5mm插孔</a></h5><h5 id="2、在系统安全方面，Android-8-0-做出了一些重要改变"><a href="#2、在系统安全方面，Android-8-0-做出了一些重要改变" class="headerlink" title="2、在系统安全方面，Android 8.0 做出了一些重要改变"></a>2、<a href="http://www.ifanr.com/903926?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">在系统安全方面，Android 8.0 做出了一些重要改变</a></h5><h5 id="3、XDA开发论坛已提供34款手机Android-8-0-ROM下载"><a href="#3、XDA开发论坛已提供34款手机Android-8-0-ROM下载" class="headerlink" title="3、XDA开发论坛已提供34款手机Android 8.0 ROM下载"></a>3、<a href="http://www.cnbeta.com/articles/soft/650195.htm?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">XDA开发论坛已提供34款手机Android 8.0 ROM下载</a></h5><a id="more"></a>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><h5 id="1、糯米移动组件架构演进之路"><a href="#1、糯米移动组件架构演进之路" class="headerlink" title="1、糯米移动组件架构演进之路"></a>1、<a href="http://www.infoq.com/cn/articles/nuomi-component-architecture" target="_blank" rel="noopener">糯米移动组件架构演进之路</a></h5><h5 id="2、Android-端基于-OpenCV-的边框识别功能"><a href="#2、Android-端基于-OpenCV-的边框识别功能" class="headerlink" title="2、Android 端基于 OpenCV 的边框识别功能"></a>2、<a href="https://pqpo.me/2017/09/11/opencv-border-recognition/" target="_blank" rel="noopener">Android 端基于 OpenCV 的边框识别功能</a></h5><h5 id="3、用少量Rxjava代码，为retrofit添加退避重试功能"><a href="#3、用少量Rxjava代码，为retrofit添加退避重试功能" class="headerlink" title="3、用少量Rxjava代码，为retrofit添加退避重试功能"></a>3、<a href="http://www.jianshu.com/p/fca90d0da2b5" target="_blank" rel="noopener">用少量Rxjava代码，为retrofit添加退避重试功能</a></h5><h5 id="4、四分钟内明白-ARCore-上手"><a href="#4、四分钟内明白-ARCore-上手" class="headerlink" title="4、四分钟内明白 ARCore + 上手"></a>4、<a href="https://mp.weixin.qq.com/s/uZ-TsvRtQJg6kf0TrfgXWw?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">四分钟内明白 ARCore + 上手</a></h5><h5 id="5、基于开源项目搭建属于自己的技术堆栈"><a href="#5、基于开源项目搭建属于自己的技术堆栈" class="headerlink" title="5、基于开源项目搭建属于自己的技术堆栈"></a>5、<a href="http://www.jianshu.com/p/42d45998117f?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">基于开源项目搭建属于自己的技术堆栈</a></h5><h5 id="6、Android进阶-视图层级实时分析"><a href="#6、Android进阶-视图层级实时分析" class="headerlink" title="6、Android进阶 - 视图层级实时分析"></a>6、<a href="http://www.jianshu.com/p/a8850e7cbac2?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">Android进阶 - 视图层级实时分析</a></h5><h5 id="7、开发者大杀器-——-刨根问底，揪出Android-App耗电的元凶代码"><a href="#7、开发者大杀器-——-刨根问底，揪出Android-App耗电的元凶代码" class="headerlink" title="7、开发者大杀器 —— 刨根问底，揪出Android App耗电的元凶代码"></a>7、<a href="http://www.jianshu.com/p/27ba2759b221" target="_blank" rel="noopener">开发者大杀器 —— 刨根问底，揪出Android App耗电的元凶代码</a></h5><p>这是一篇讲述应用耗电的文章，围绕Android电量采集机制及第二代Battery Historian分析工具讲述。文从数据采集、导出、环境搭建、解读报告的角度出发，从细节讲解整个流程。和大谈概念的文章不同，这里将进行实际操作及分析。</p>
+<h5 id="8、Android卡顿检测方案"><a href="#8、Android卡顿检测方案" class="headerlink" title="8、Android卡顿检测方案"></a>8、<a href="http://blog.coderclock.com/2017/06/04/android/AndroidPerformanceTools-BlockLooper/" target="_blank" rel="noopener">Android卡顿检测方案</a></h5><p>应用的流畅度最直接的影响了App的用户体验，轻微的卡顿有时导致用户的界面操作需要等待一两秒钟才能生效，严重的卡顿则导致系统直接弹出ANR的提示窗口，让用户选择要继续等待还是关闭应用。所以，如果想要提升用户体验，就需要尽量避免卡顿的产生。本文提供了详细的卡顿检测方案。</p>
+<h5 id="9、WebView缓存原理分析和应用"><a href="#9、WebView缓存原理分析和应用" class="headerlink" title="9、WebView缓存原理分析和应用"></a>9、<a href="http://unclechen.github.io/2017/05/13/WebView%E7%BC%93%E5%AD%98%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E5%92%8C%E5%BA%94%E7%94%A8/" target="_blank" rel="noopener">WebView缓存原理分析和应用</a></h5><p>现在的App开发，或多或少都会用到Hybrid模式，到了WebView这边，经常会加载一些js文件（例如和WebView用来Native通信的bridge.js），而这些js文件不会经常发生变化，所以我们希望js在WebView里面加载一次之后，如果js没有发生变化，下次就不用再发起网络请求去加载，从而减少流量和资源的占用。那么有什么方式可以达到这个目的呢？先得从WebView的缓存原理入手。</p>
+<h2 id="开源项目"><a href="#开源项目" class="headerlink" title="开源项目"></a>开源项目</h2><h5 id="1、DDComponentForAndroid"><a href="#1、DDComponentForAndroid" class="headerlink" title="1、DDComponentForAndroid"></a>1、<a href="https://github.com/luojilab/DDComponentForAndroid?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">DDComponentForAndroid</a></h5><p>一套完整有效的android组件化方案，支持组件的单独调试、集成调试、组件交互、UI跳转、动态加载、组件完全隔离等功能</p>
+<h5 id="2、Aria"><a href="#2、Aria" class="headerlink" title="2、Aria"></a>2、<a href="https://github.com/AriaLyy/Aria" target="_blank" rel="noopener">Aria</a></h5><p>一个简单易用，稳当高效的下载框架。</p>
+<h5 id="3、AgentWeb"><a href="#3、AgentWeb" class="headerlink" title="3、AgentWeb"></a>3、<a href="https://github.com/Justson/AgentWeb" target="_blank" rel="noopener">AgentWeb</a></h5><p>AgentWeb是基于Android WebView一个功能完善小型浏览器库。使用很方便，集成进你应用，只需几行代码。</p>
+<h5 id="4、InfiniteCycleViewPager"><a href="#4、InfiniteCycleViewPager" class="headerlink" title="4、InfiniteCycleViewPager"></a>4、<a href="https://github.com/Devlight/InfiniteCycleViewPager" target="_blank" rel="noopener">InfiniteCycleViewPager</a></h5><p>一个很炫的切换效果实现，支持横向、竖向切换。</p>
+<h5 id="5、QMUI-Android"><a href="#5、QMUI-Android" class="headerlink" title="5、QMUI Android"></a>5、<a href="https://github.com/QMUI/QMUI_Android?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">QMUI Android</a></h5><p>提高 Android UI 开发效率的 UI 库</p>
+<h5 id="6、NullAway"><a href="#6、NullAway" class="headerlink" title="6、NullAway"></a>6、<a href="https://github.com/uber/NullAway?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">NullAway</a></h5><p>A tool to help eliminate NullPointerExceptions (NPEs) in your Java code.</p>
+<h5 id="7、Sketch"><a href="#7、Sketch" class="headerlink" title="7、Sketch"></a>7、<a href="https://github.com/panpf/sketch?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">Sketch</a></h5><p>一个强大且全面的图片加载器，支持GIF，手势缩放以及分块显示超大图片</p>
+<h2 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h2><h5 id="1、Android-Apk-Size-Watcher-Plugin"><a href="#1、Android-Apk-Size-Watcher-Plugin" class="headerlink" title="1、Android Apk Size Watcher Plugin"></a>1、<a href="https://wiki.jenkins.io/display/JENKINS/Android+Apk+Size+Watcher+Plugin?utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">Android Apk Size Watcher Plugin</a></h5><p>Watch over the changing size of your .apk file and fail your build once the change exceeds your specified threshold.</p>
+<h5 id="2、Apk-DeGuard"><a href="#2、Apk-DeGuard" class="headerlink" title="2、Apk DeGuard"></a>2、<a href="http://apk-deguard.com/?utm_source=androidweekl.cn&amp;utm_source=androidweekly.cn&amp;utm_medium=website" target="_blank" rel="noopener">Apk DeGuard</a></h5><p>DeGuard reverses the process of obfuscation performed by Android obfuscation tools. This enables numerous security analyses, including code inspection and predicting libraries.</p>
+<h2 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h2><h5 id="1、腾讯传1998—2016"><a href="#1、腾讯传1998—2016" class="headerlink" title="1、腾讯传1998—2016"></a>1、<a href="">腾讯传1998—2016</a></h5><h2 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h2><h5 id="1、如何在二线城市打造专业性技术团队？"><a href="#1、如何在二线城市打造专业性技术团队？" class="headerlink" title="1、如何在二线城市打造专业性技术团队？"></a>1、<a href="http://www.infoq.com/cn/articles/build-a-professional-technical-team-in-second-tier-cities" target="_blank" rel="noopener">如何在二线城市打造专业性技术团队？</a></h5><p>当前逐步有更多二线城市对于人才有更多和更高的需求，同时也有一些一线城市的人才也在寻求到二线城市发展的机会，所以期望通过这样的分享和讨论能给大家带来一些建议。当然因为我个人从北京回来厦门一年半，了解的也还不够全面，这方面我们也是在不断的摸索和尝试中，还有很多事情要做，还任重道远，希望接下来也可以一起多多交流，互相学习。</p>
+<h3 id="Android-开源系列"><a href="#Android-开源系列" class="headerlink" title="Android 开源系列"></a><a href="http://zimob.cc/categories/Android/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/" target="_blank" rel="noopener">Android 开源系列</a></h3><p><a href="http://zimob.cc/2017/08/17/android-cache-fragment/" target="_blank" rel="noopener">【Android 开源系列】之缓存框架</a><br><a href="http://zimob.cc/2017/08/18/os_network_fragment" target="_blank" rel="noopener">【Android 开源系列】之网络请求框架</a><br><a href="http://zimob.cc/2017/08/18/os_img_fragment" target="_blank" rel="noopener">【Android 开源系列】之图片加载框架</a><br><a href="http://zimob.cc/2017/08/21/os-video-fragment" target="_blank" rel="noopener">【Android 开源系列】之视频处理框架</a><br><a href="http://zimob.cc/2017/08/29/os-orm-fragment" target="_blank" rel="noopener">【Android 开源系列】之数据库ORM框架</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.zimob.cc/2017/09/12/developer-weekly-6/" data-id="cjp0miebm0010b0vh57tqntp6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/04/10/framework-group/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    【转载】各大互联网公司架构演进之路汇总
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2017/09/05/developer-weekly-5/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">Android开发者e周报 第5期</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+	<div id="commentContainer"></div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap widget-list">
+    	<!-- <h3 class="widget-title">链接</h3> -->
+        <h3 class="widget-title">友情链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://blog.csdn.net/xwc010">CSDN博客</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.jianshu.com/u/50fde98da15e">简书</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+        
+    <div class="widget-wrap">
+    	<!-- <h3 class="widget-title">分类</h3> -->
+        <h3 class="widget-title">文章分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">20</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/周报/">周报</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android/开源/">开源</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android/开源系列/">开源系列</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android/黑科技/">黑科技</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/人生感悟/">人生感悟</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/架构/">架构</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+    	<!-- <h3 class="widget-title">标签云</h3> -->
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/ASimpleCache/" style="font-size: 10px;">ASimpleCache</a> <a href="/tags/Activity/" style="font-size: 10px;">Activity</a> <a href="/tags/Android/" style="font-size: 20px;">Android</a> <a href="/tags/Bilibili/" style="font-size: 10px;">Bilibili</a> <a href="/tags/Collection/" style="font-size: 10px;">Collection</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/DiskLruCache/" style="font-size: 10px;">DiskLruCache</a> <a href="/tags/ExoPlayer/" style="font-size: 10px;">ExoPlayer</a> <a href="/tags/FFmpeg/" style="font-size: 10px;">FFmpeg</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Glide/" style="font-size: 10px;">Glide</a> <a href="/tags/JNI/" style="font-size: 12.86px;">JNI</a> <a href="/tags/JakeWharton/" style="font-size: 12.86px;">JakeWharton</a> <a href="/tags/Java/" style="font-size: 17.14px;">Java</a> <a href="/tags/NDK/" style="font-size: 12.86px;">NDK</a> <a href="/tags/ORM/" style="font-size: 10px;">ORM</a> <a href="/tags/OkHttp/" style="font-size: 10px;">OkHttp</a> <a href="/tags/Picasso/" style="font-size: 10px;">Picasso</a> <a href="/tags/Retrofit/" style="font-size: 10px;">Retrofit</a> <a href="/tags/Vitamio/" style="font-size: 10px;">Vitamio</a> <a href="/tags/Volley/" style="font-size: 10px;">Volley</a> <a href="/tags/adb/" style="font-size: 11.43px;">adb</a> <a href="/tags/ijkplayer/" style="font-size: 10px;">ijkplayer</a> <a href="/tags/人性的弱点/" style="font-size: 10px;">人性的弱点</a> <a href="/tags/周报/" style="font-size: 15.71px;">周报</a> <a href="/tags/图片加载框架/" style="font-size: 10px;">图片加载框架</a> <a href="/tags/开源/" style="font-size: 14.29px;">开源</a> <a href="/tags/开源系列/" style="font-size: 10px;">开源系列</a> <a href="/tags/开源网站/" style="font-size: 10px;">开源网站</a> <a href="/tags/开源项目/" style="font-size: 18.57px;">开源项目</a> <a href="/tags/数据加解密/" style="font-size: 10px;">数据加解密</a> <a href="/tags/架构/" style="font-size: 10px;">架构</a> <a href="/tags/线程安全/" style="font-size: 10px;">线程安全</a> <a href="/tags/缓存框架/" style="font-size: 10px;">缓存框架</a> <a href="/tags/网络框架/" style="font-size: 10px;">网络框架</a> <a href="/tags/视频处理/" style="font-size: 10px;">视频处理</a> <a href="/tags/财富/" style="font-size: 10px;">财富</a> <a href="/tags/黑科技/" style="font-size: 10px;">黑科技</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <!-- <h3 class="widget-title">最新文章</h3> -->
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/28/blog/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+                            <p class="item-title"><a href="/2018/11/28/blog/" class="title">blog</a></p>
+                            <p class="item-date"><time datetime="2018-11-28T03:36:24.000Z" itemprop="datePublished">2018-11-28</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/09/10/collections-thread/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Java/">Java</a></p>
+                            <p class="item-title"><a href="/2018/09/10/collections-thread/" class="title">【JAVA】集合Collection线程安全的几种使用</a></p>
+                            <p class="item-date"><time datetime="2018-09-10T09:33:13.000Z" itemprop="datePublished">2018-09-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/04/10/framework-group/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/架构/">架构</a></p>
+                            <p class="item-title"><a href="/2018/04/10/framework-group/" class="title">【转载】各大互联网公司架构演进之路汇总</a></p>
+                            <p class="item-date"><time datetime="2018-04-10T03:13:08.000Z" itemprop="datePublished">2018-04-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/12/developer-weekly-6/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Android/周报/">周报</a></p>
+                            <p class="item-title"><a href="/2017/09/12/developer-weekly-6/" class="title">Android开发者e周报 第6期</a></p>
+                            <p class="item-date"><time datetime="2017-09-12T07:38:41.000Z" itemprop="datePublished">2017-09-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/05/developer-weekly-5/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Android/周报/">周报</a></p>
+                            <p class="item-title"><a href="/2017/09/05/developer-weekly-5/" class="title">Android开发者e周报 第5期</a></p>
+                            <p class="item-date"><time datetime="2017-09-05T04:38:41.000Z" itemprop="datePublished">2017-09-05</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 子 墨
+            <br>
+            The unthinking knowledge does not belong to you.
+            <!-- Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. -->
+            <br>
+            <span id="busuanzi_container_site_uv"> 
+  				亘古永蓝 浏览量 <span id="busuanzi_value_site_pv"></span>
+			</span>
+        </div>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <!-- google广告 -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- 测试 -->
+	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3265299695901949" data-ad-slot="3518539194" data-ad-format="auto"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</footer>
+        
+    
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			owner: 'xwc010',
+			repo: 'xwc010.github.io',
+			oauth: {
+				client_id: '40a626053bffc7cd46e4',
+				client_secret: '4994eee39ee4b1e5ccbe6fbb5335c7e5919b1058',
+			},
+		})
+		gitment.render('commentContainer')
+	</script>
+	
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+    
+    <!-- google广告 -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-format="fluid"
+        data-ad-layout="image-top"
+        data-ad-layout-key="-8f+29-ff+cn+o3"
+        data-ad-client="ca-pub-3265299695901949"
+        data-ad-slot="5146960411">
+    </ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script> 
+    <!-- 友盟统计 -->
+    <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1263586266'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263586266%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+    </script> 
+</body>
+</html>
